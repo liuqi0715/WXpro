@@ -1,0 +1,34 @@
+<!--pages/OfflineActivity/Activity/Activity.wxml-->
+<view class='theme' wx:for="{{title}}" wx:key="{{item.id}}">
+  <view class='theme_name'><text class='text_color_black'>{{item.name}}</text></view>
+  <view class='content'>
+    <view class='content_left'>
+    <view class='box_img'><image mode='' src='{{item.img}}' /></view>
+    <text class='city'>{{item.city}}</text>
+    </view>
+    <view class='content_right'>
+      <text>日期：{{item.time}}\n规模：{{item.much}}\n岗位：{{item.posts}}\n地点：{{item.place}}</text>
+    </view>
+  </view>
+  <view class='clear_float'></view>
+</view>
+<view class='bottom_color'></view>
+<view class='service'>
+  <view><text class='text_color_black'>现场服务</text></view>
+  <view class='line'></view>
+  <view wx:for="{{service}}" wx:key="{{item.id}}"><text class='text_color_word'>{{item.content}}</text></view>
+</view>
+<view class='bottom_color'></view>
+<view class='service bottom_word'>
+  <view><text class='text_color_black'>活动简介</text></view>
+  <view class='line'></view>
+  <view wx:for="{{activ}}" wx:key="{{item.id}}"><text class='text_color_word'>{{item.content}}</text></view>
+</view>
+<view class='bottom'>
+    <view class='bottom_left'>
+    <navigator url='../Enterprise/Enterprise'>参与企业</navigator>
+    </view>
+    <view class='bottom_right'>
+    <navigator url='../JobSel/JobSel'>职位列表</navigator>
+    </view>
+</view>
