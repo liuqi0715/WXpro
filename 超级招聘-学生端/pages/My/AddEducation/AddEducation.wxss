@@ -1,0 +1,61 @@
+/* pages/My/AddEducation/AddEducation.wxss */
+page{
+  background-color:#EBF0F3;
+}
+
+
+/* 表单 */
+
+.lists{
+  background-color:#fff;
+  padding:0 10px;
+}
+.lists .list{
+  border-bottom:1px solid #EBEBEB;
+  padding:10px 0;
+  font-size:14px;
+}
+.lists .list:last-child{
+  border:0;
+}
+.lists .list .right{
+  flex-grow:1;
+  margin-left:20px;
+  text-align: right;
+}
+.lists .list .left{
+  flex-shrink:0;
+}
+
+
+.lists .hidden{
+  display: none;
+}
+
+/* 工作内容描述 */
+.title{
+  padding:10px;
+  color:#333;
+  font-size:14px;
+}
+.textarea{
+  background-color:#fff;
+  width:100%;
+  height:100px;
+  padding:5px 10px;
+  font-size:14px;
+}
+
+
+.save-btn {
+    width: 60%;
+    height: 80rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 80rpx;
+    background-color: #EE7700;
+    border-radius:60px;
+    color: #fff;
+    margin-top:15px;
+}

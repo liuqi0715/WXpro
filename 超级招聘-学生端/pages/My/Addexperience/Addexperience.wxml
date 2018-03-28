@@ -1,0 +1,52 @@
+<!--pages/My/Addexperience/Addexperience.wxml-->
+
+<form bindsubmit="savePersonInfo">
+  <view class="lists">
+    <!-- 公司名称 -->
+    <view class="list flex_acjb">
+      <view class="left">公司名称</view>
+      <input class="right" type='text' name="name" placeholder='请输入公司名称'></input>
+    </view>
+
+    <!-- 职务  -->
+    <view class="list flex_acjb">
+      <view class="left">职务</view>
+      <input class="right" type='text' name="name" placeholder='请输入您的职务'></input>
+    </view>
+
+    <!-- 开始时间  -->
+    <view class="list flex_acjb">
+      <view class="left">开始时间</view>
+       <picker mode="date" value="{{sdate}}" end="{{edate}}" id="sdata" bindchange="sdateChange" class="right">
+        <view class="picker">
+          {{sdate}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+    </view>
+    <!-- 结束时间 -->
+   <view class="list flex_acjb">
+      <view class="left">结束时间</view>
+       <picker mode="date" value="{{edate}}" start="{{sdate}}"  id="edata" bindchange="edateChange" class="right">
+        <view class="picker">
+          {{edate}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+    </view>
+    
+  </view>
+  <!-- 工作内容描述 -->
+  <view class="title">工作内容描述</view>
+
+  <textarea class="textarea" placeholder='请输入您的工作内容描述'></textarea>
+
+
+  <button formType="submit" class="save-btn">保 存</button>
+</form>
+
+
+
+
+
+
