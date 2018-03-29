@@ -1,0 +1,107 @@
+/**app.wxss**/
+
+@import "./lib/iconfont.wxss";
+
+page{
+  color: #666;
+}
+view,
+text{
+  box-sizing: border-box;
+}
+.bg_color{
+	background-color: #ED7701!important;
+  color: #fff!important;
+}
+.text_color{
+	color: #ED7701!important;
+}
+.flex_aic{
+  display: flex;
+  align-items: center;
+}
+.flex_acjb{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.text_333{
+  color: #333;
+}
+
+/* 筛选样式 */
+
+.nav {
+  height: 50px;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+  font-size: 30rpx;
+  position: relative;
+}
+
+.nav_li {
+  border-right: 1px solid #ccc;
+  padding: 0 10px;
+  margin: 10px 0;
+  line-height: 1;
+}
+
+.nav_li_tit {
+  margin-left: 10px;
+}
+
+.nav_li_tit .icon-xiala {
+  margin-left: 5px;
+  color: #d3d3d3;
+}
+.icon-xiala:before {
+  display: inline-block;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.text_color.icon-xiala:before {
+  transform: rotate(-180deg);
+  transform-origin: 50%;
+  color: #ed7701;
+}
+.zhiwu_box {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  z-index: 1;
+}
+
+.box_bg {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.box_list {
+  position: relative;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.box_li {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 30rpx;
+}
+.ms_hide{
+  display: none;
+}

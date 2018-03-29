@@ -1,0 +1,48 @@
+{
+  "pages":[
+    "pages/index/index",                      
+    "pages/logs/logs",
+    "pages/index/goodsDetail/goodsDetail",    
+    "pages/integral/integral",
+    "pages/shopCart/shopCart",
+    "pages/mine/mine"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "有了个趣",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "selectedColor":"#C3D600",               
+    "color":"#BDBDBD",                      
+    "backgroundColor":"#fff",
+    "list":[                                 
+      {
+        "pagePath":"pages/index/index",        
+        "text":"首页",                         
+        "iconPath":"img/home.png",                        
+        "selectedIconPath":"img/homeSelected.png"                
+      },
+      {
+        "pagePath":"pages/integral/integral",
+        "text":"积分",
+        "iconPath":"img/search.png",
+        "selectedIconPath":"img/searchSelected.png"
+      },
+      {
+        "pagePath":"pages/shopCart/shopCart",
+        "text": "养护",
+        "iconPath": "img/flower.png",
+        "selectedIconPath": "img/flowerSelected.png"
+      },
+      {
+        "pagePath":"pages/mine/mine",
+        "text": "首页",
+        "iconPath": "img/mine.png",
+        "selectedIconPath": "img/mineSelected.png"
+      }
+      
+    ]    
+  }
+}

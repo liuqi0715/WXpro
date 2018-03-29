@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/Index/Index/Index",    
+    "pages/OfflineActivity/OfflineActivity",
+    "pages/My/My",
+    "pages/My/BasicInformation/BasicInformation",
+    "pages/My/JobIntention/JobIntention",
+    "pages/My/PersonalAdvantage/PersonalAdvantage",
+    "pages/My/WorkExperience/WorkExperience",
+    "pages/My/Addexperience/Addexperience",
+    "pages/My/EducationalBackground/EducationalBackground",
+    "pages/My/AddEducation/AddEducation",
+    "pages/My/DiplomaCertification/DiplomaCertification",
+    "pages/My/DeliveryRecords/DeliveryRecords",
+    "pages/My/ImHR/ImHR",
+    "pages/Index/Details/Details",
+    "pages/Index/JobDetails/JobDetails",
+    "pages/Index/Search/Search",
+    "pages/Index/JobName/JobName",
+    "pages/Index/City/City",
+    "pages/My/Collect/Collect",
+    "pages/My/MsAsk/MsAsk",
+    "pages/My/BroHistory/BroHistory",
+    "pages/OfflineActivity/OfflineActivity/OfflineActivity",
+    "pages/OfflineActivity/Enterprise/Enterprise",
+    "pages/OfflineActivity/Activity/Activity",
+    "pages/Login/Login",
+    "pages/PhoneLogin/PhoneLogin",
+    "pages/signUp/signUp",
+    "pages/My/ChangePwd/ChangePwd",
+    "pages/My/MyLike/MyLike",
+    "pages/My/InvMe/InvMe",
+    "pages/My/MyTest/MyTest",
+    "pages/My/MyTestOne/MyTestOne",
+    "pages/My/MyTestTwo/MyTestTwo",
+    "pages/My/MyTestSubmit/MyTestSubmit",
+    "pages/My/ResumeDetails/ResumeDetails",
+    "pages/SetPassword/SetPassword",
+    "pages/RetrievePassword/RetrievePassword",
+    "pages/OfflineActivity/JobSel/JobSel",
+    "pages/ModifyThePassword/ModifyThePassword"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ED7701",    
+    "navigationBarTitleText": "超级招聘学生版",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "selectedColor": "#ED7701",
+    "color": "#9a9a9a",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/Index/Index/Index",
+        "text": "好工作",
+        "iconPath": "img/personnel.png",
+        "selectedIconPath": "img/personnel_a.png"
+      },
+      {
+        "pagePath": "pages/OfflineActivity/OfflineActivity/OfflineActivity",
+        "text": "线下活动",
+        "iconPath": "img/post.png",
+        "selectedIconPath": "img/post_a.png"
+      },
+      {
+        "pagePath": "pages/My/My",
+        "text": "我的",
+        "iconPath": "img/enterprise.png",
+        "selectedIconPath": "img/enterprise_a.png"
+      }
+    ]
+  }
+}
