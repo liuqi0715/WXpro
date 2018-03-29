@@ -1,0 +1,87 @@
+<!--pages/My/BasicInformation/BasicInformation.wxml-->
+
+<form bindsubmit="savePersonInfo">
+  <view class="lists">
+    <!-- 姓名 -->
+    <view class="list flex_acjb">
+      <view class="left">姓名</view>
+      <input class="right" type='text' name="name" placeholder='请输入您的姓名'></input>
+    </view>
+
+    <!-- 手机  -->
+    <view class="list flex_acjb">
+      <view class="left">手机</view>
+      <input class="right" type='text' name="name" placeholder='请输入您的手机号码'></input>
+    </view>
+
+    <!-- 邮箱  -->
+    <view class="list flex_acjb">
+      <view class="left">邮箱</view>
+      <input class="right" type='text' name="name" placeholder='请输入您的邮箱'></input>
+    </view>
+
+    <!-- 性别  -->
+    <view class="list flex_acjb">
+      <view class="left">性别</view>
+       <picker bindchange="genderChange" value="{{genderIndex}}" range="{{gender}}">
+        <view class="picker">
+          {{gender[genderIndex]}}
+          <text class="iconfont icon-you"></text>
+      </view>
+      </picker>
+    </view>
+
+    <!-- 学历  -->
+    <view class="list flex_acjb">
+      <view class="left">最高学历</view>
+       <picker bindchange="genderChange" value="{{educationIndex}}" range="{{education}}">
+        <view class="picker">
+          {{education[educationIndex]}}
+          <text class="iconfont icon-you"></text>
+      </view>
+      </picker>
+    </view>
+
+
+    <!-- 出生日期  -->
+    <view class="list flex_acjb">
+      <view class="left">出生日期</view>
+       <picker mode="date" value="{{date}}" start="1900-01-1" end="2017-09-01" id="data" bindchange="dateChange">
+        <view class="picker">
+          {{date}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+    </view>
+    <!-- 户籍  -->
+     <view class="list flex_acjb">
+      <view class="left">户籍</view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}}-{{region[1]}}-{{region[2]}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+      </view>
+  </view>
+  <!-- 关键字 -->
+  <view class="lists keyword">
+    <view class="list flex_acjb">
+      <view class="left">关键字</view>
+        <picker bindchange="keywordChange" value="{{keywordIndex}}" range="{{keyword}}">
+        <view class="picker">
+          {{keyword[keywordIndex]}}
+          <text class="iconfont icon-you"></text>
+      </view>
+      </picker>
+    </view>
+  </view>
+  
+  <button formType="submit" class="save-btn">保 存</button>
+</form>
+
+
+
+
+
+
