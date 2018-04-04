@@ -1,0 +1,96 @@
+/* pages/My/InvMe/InvMe.wxss */
+page{
+  background-color: #EEF3FA;
+}
+.my_top{
+  background-color: #fff;
+  padding: 15px 20rpx 15px 20rpx;
+  font-size: 17px;
+  margin-bottom: 15px;
+}
+.icon-shijian{
+  color: red;
+}
+.button{
+  width: 25%;
+  height: 60rpx;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 60rpx;
+}
+.btn_refuse{
+  background-color: #c3c3c3;
+}
+.btn_agree{
+  background-color: #EE7700;
+}
+.btn_talk{
+   background-color: #00B2EB;
+}
+.btn_word{
+  padding: 0px 50rpx;
+  margin-top: 15px;
+}
+.company{
+  margin: 5px 0px;
+}
+.text_15{
+  font-size: 15px;
+}
+.see_more{
+  color: #EE7700;
+  position: absolute;
+  right: 30rpx;
+}
+.hide{
+  display: none;
+}
+.show{
+  display: block;
+}
+.add_eva{
+  width: 70%;
+  height: 75rpx;
+  margin: 30rpx 0px 0px 15%;
+  border: 1px solid #EE7700;
+  color: #EE7700;
+  text-align: center;
+  line-height: 75rpx;
+  border-radius: 5px;
+}
+icon{
+  margin-right: 3px;
+}
+.state{
+  text-align: right;
+  margin: 15px 15rpx 0px 0px;
+}
+.text_sta{
+  position: relative;
+  top: -5rpx;
+}
+.assess{
+  margin-top: 15px;
+  color: #999999;
+}
+textarea{
+  box-sizing: border-box;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #EE7700;
+  border-radius: 5px;
+  margin: 15px 0px;
+  font-size: 15px;
+}
+.btn_eva{
+  background-color: #EE7700;
+  width: 50%;
+  height: 60rpx;
+  font-size: 13px;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 60rpx;
+}

@@ -1,0 +1,65 @@
+<!--pages/My/InvMe/InvMe.wxml-->
+<view class='my_top' wx:for="{{title}}" wx:key="{{item.id}}">
+  <view class='flex_acjb'>
+    <text class='text_333'>{{item.job}}</text>
+    <view>
+      <text class='iconfont icon-shijian'></text>
+      <text>{{item.time}}</text>
+    </view>
+  </view>
+  <view class='company text_15'>{{item.company}}</view>
+  <view class='text_15 content'>
+    {{item.content}}
+    <text class='see_more' bindtap='see_more' data-id='id'>查看详情>>></text>
+  </view>
+   <view class="flex_acjb btn_word {{falg===1?'hide':''}}">
+    <view class='btn_refuse button' bindtap='refuse'>拒绝面试</view>
+    <view class='btn_agree button' bindtap='agree'>同意面试</view>
+    <view class='btn_talk button' bindtap='hrll' data-id="{{item.id}}">和HR聊聊</view>
+  </view> 
+  <view class="state {{falg===0?'hide':''}} {{falg===1?'show':''}}">
+    <icon type="{{gou}}" size="18"/>
+    <text class='text_15 text_sta'>{{decide}}</text>
+  </view>
+</view>
+<view class='my_top' wx:for="{{after_inv}}" wx:key="{{item.id}}">
+  <view class='flex_acjb'>
+    <text class='text_333'>{{item.job}}</text>
+    <view>
+      <text class='iconfont icon-shijian'></text>
+      <text>{{item.time}}</text>
+    </view>
+  </view>
+  <view class='company text_15'>{{item.company}}</view>
+  <view class='text_15 content'>
+    {{item.content}}
+    <text class='see_more' bindtap='see_more' data-id='id'>查看详情>>></text>
+  </view>
+  <view class="add_eva {{eva===1?'hide':''}}" bindtap='add_eva'>填写面试评语</view> 
+  <view class="{{eva===0?'hide':''}} {{eva===1?'show':''}}">
+    <textarea bindconfirm="btn_eva" value='{{text_eva}}' bindinput="bindblur" class="{{ass===1?'hide':''}}"></textarea>
+    <button class="btn_eva {{ass===1?'hide':''}}" bindtap='btn_ass'>提交</button>
+  </view>
+  <view class="text_15 assess {{ass===0?'hide':''}} {{ass===1?'show':''}}">
+    <view><text>我的评语:</text></view>
+    <view><text>{{my_assess}}</text></view>
+  </view>
+</view>
+<view class='my_top' wx:for="{{after_inv}}" wx:key="{{item.id}}">
+  <view class='flex_acjb'>
+    <text class='text_333'>{{item.job}}</text>
+    <view>
+      <text class='iconfont icon-shijian'></text>
+      <text>{{item.time}}</text>
+    </view>
+  </view>
+  <view class='company text_15'>{{item.company}}</view>
+  <view class='text_15 content'>
+    {{item.content}}
+    <text class='see_more' bindtap='see_more' data-id='id'>查看详情>>></text>
+  </view>
+  <view class='text_15 assess'>
+    <view><text>我的评语:</text></view>
+    <view><text>面试官很热情 想加入</text></view>
+  </view> 
+</view>
