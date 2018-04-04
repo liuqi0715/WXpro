@@ -1,0 +1,154 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "touristappid",
+	"projectname": "11",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 15,
+			"list": [
+				{
+					"id": -1,
+					"name": "我的页面",
+					"pathName": "pages/My/My",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "基本信息",
+					"pathName": "pages/My/BasicInformation/BasicInformation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "求职意向",
+					"pathName": "pages/My/JobIntention/JobIntention",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人优势",
+					"pathName": "pages/My/PersonalAdvantage/PersonalAdvantage",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "工作经历",
+					"pathName": "pages/My/WorkExperience/WorkExperience",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加工作经历",
+					"pathName": "pages/My/Addexperience/Addexperience",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "添加教育背景",
+					"pathName": "pages/My/AddEducation/AddEducation",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "学历认证",
+					"pathName": "pages/My/DiplomaCertification/DiplomaCertification",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "和HR聊聊",
+					"pathName": "pages/My/ImHR/ImHR",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "投递记录",
+					"pathName": "pages/My/DeliveryRecords/DeliveryRecords",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "搜索",
+					"pathName": "pages/Index/Search/Search",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "登陆",
+					"pathName": "pages/Login/Login",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "职业测评",
+					"pathName": "pages/My/MyTest/MyTest",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "预览简历",
+					"pathName": "pages/My/ResumeDetails/ResumeDetails",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "企业详情",
+					"pathName": "pages/Index/Details/Details",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "职位详情",
+					"pathName": "pages/Index/JobDetails/JobDetails",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "参会企业",
+					"pathName": "pages/OfflineActivity/Enterprise/Enterprise",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "修改密码",
+					"pathName": "pages/ModifyThePassword/ModifyThePassword",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "线下活动",
+					"pathName": "pages/OfflineActivity/OfflineActivity/OfflineActivity",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "个人测评",
+					"pathName": "pages/My/MyTestOne/MyTestOne",
+					"query": ""
+				}
+			]
+		}
+	}
+}

@@ -1,0 +1,40 @@
+<!--pages/My/MsAsk/MsAsk.wxml-->
+<view class='ms_content'>
+  <view class='title'>北京科瑞有限公司</view>
+  <view class='claa_name'>亲爱的王晓蕊:</view>
+  <view class='ms_job_name'>经过本公司对您的简历评估,非常感谢您,您个人的特质与价值观,适合本公司的储备互关+双休+5K岗位,中国安静地拿电脑卡俺看见你打开技能大赛会计法你上课减肥呢烧烤架你的快速减肥你是客服呢可能开发的机会.</view>
+  <view class='go_time'>请于2017年06月14日14:00至山西西安被领取边村路琼山大道与红护城河交叉路三楼面试.</view>
+  <view class='wz_rem'>温馨提示:
+    <view>1.14:00准时面试</view>
+    <view>2.着正式服装</view>
+    <view>3.携带身份证正本及复印件,最高学历证书正本及复印件.</view>
+  </view>
+  <view class='person_to'>联络人:杜飞</view>
+  <view class='call_tel'>电话:13888888888</view>
+  <view class='e_mail'>邮箱:88888888@qq.com</view>
+  <view class='zf_ask'>祝福您:
+    <view>投入新的职场将会有崭新的契机与未来</view>
+  </view>
+  <view class='renshibu'>人事部
+    <text>敬上</text>
+  </view>
+</view>
+<!-- 选择按钮 -->
+<view class='ms_select'>
+  <!-- 拒绝面试 -->
+  <view class='jujue_sel' bindtap='jujueGo'>
+    <view>拒绝面试</view>
+  </view>
+  <!-- 同意面试 -->
+  <view class='tongyi_sel' bindtap='tongyiGo'>
+    <view>同意面试</view>
+  </view>
+  <!-- 和HR聊聊-->
+  <view class='talk_sel' bindtap='talkGo'>
+    <view>和HR聊聊</view>
+  </view>
+</view>
+<!-- 模态框 -->
+<modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChangeConfirm" bindcancel="modalChangeCancel">
+  <view> {{titleName}}</view>
+</modal>

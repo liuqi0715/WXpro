@@ -1,0 +1,24 @@
+<!--pages/My/PersonalAdvantage/PersonalAdvantage.wxml-->
+<view id='box'>
+  <view class='titles'>200字以内</view>
+  <!-- 输入框 -->
+  <textarea placeholder='亮出自己的优势，更能得到企业的青睐~' maxlength="200" id="text" bindinput='change'></textarea>
+<view class="look flex_acjb">
+  <view class="left" bindtap='shows'>看看别人怎么写</view>
+  <view class="right">{{num}}/200</view>
+</view>
+</view>
+ <!-- 实例窗 -->
+<view id="window" wx:if='{{show}}'>
+  <view class="sanjiao"></view>
+  <view class="flex_acjb top">
+    <view class="types">{{types}}</view>
+    <view class="change" bindtap='batch'>换一批</view>
+  </view>
+  <view class="text">
+    CSS三角形绘制方法,学会了这个,其它的也就简单。... CSS三角形绘制方法,学会了这个,其它的也就简单。我们的网页因为 CSS 而呈现千变万化的风格
+  </view>
+
+</view>
+
+ <button formType="submit" class="save-btn">保 存</button>

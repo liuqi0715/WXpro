@@ -1,0 +1,90 @@
+/* pages/login/login.wxss */
+.login{
+  margin: 30px 20px;
+  padding: 0 15px;
+}
+/* 登录框 */
+.login_input{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 30rpx;
+}
+.login_input input{
+  flex: 1;
+  border-bottom: 1px solid #ccc;
+}
+.login_input text{
+  font-size: 30rpx;
+}
+/* 登录按钮 */
+.login_btn{
+  margin-top: 30px;
+  padding: 0 40px;
+}
+.login_btn button{
+  border-radius: 23px;
+  color: #fff;
+}
+.login_btn .login_reset{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px; 
+}
+/* 头像/注册 */
+.head{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px; 
+  padding-right: 20px;
+}
+image{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-40%);
+}
+.sign_word{
+  margin-top: -50px;
+}
+.other_sign{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.other_line{
+  width: 50px;
+  height: 1px;
+  background-color: #ccc;
+  margin: 0px 10px;
+}
+.other_signIn{
+  width: 40px;
+  height: 40px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: 15px 20px;
+}
+.text_font{
+  font-size: 15px;
+}
+.left_line{
+  border-bottom: 1px solid #ccc;
+  padding: 0px 5px 2px 5px;
+  margin-right: 5px;
+}
+.right_line{
+  border-bottom: 1px solid #ccc;
+  padding: 0px 5px 7px 5px;
+  margin-left: 5px;
+}
+.sigin_agree{
+  color: #B0B0B0;
+  font-size: 15px;
+}

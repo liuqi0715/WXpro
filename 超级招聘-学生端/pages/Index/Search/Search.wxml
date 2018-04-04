@@ -1,0 +1,58 @@
+<!--pages/Index/Search/Search.wxml-->
+<!-- <text>pages/Index/Search/Search.wxml</text> -->
+<!-- <view class='search_kuang'></view> -->
+<view class='search_row'>
+  <view class='search_kuang'>
+    <text class='iconfont icon-sousuo'></text>
+    <input class="search_name" bindconfirm="bindtap" focus="{{inputShowed}}" bindfocus="bindfocus" placeholder="输入职位/公司/标签" bindblur='bindblur' value="{{inputValue}}" />
+    <!-- <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+      <icon type="clear" size="14"></icon>
+    </view> -->
+  </view>
+  <view class='search_go' bindtap="bindtap" data-tags='{{input}}'>搜索</view>
+</view>
+<!--熱門搜索  -->
+<view wx:if="{{!job_post}}">
+  <view class='search_hot'>热门搜索</view>
+  <view class='search_biaoqian'>
+    <text bindtap="bindtap" data-tags='人事'>人事</text>
+    <text bindtap="bindtap" data-tags='客服'>客服</text>
+    <text bindtap="bindtap" data-tags='销售'>销售</text>
+    <text bindtap="bindtap" data-tags='爱空间'>爱空间</text>
+    <text bindtap="bindtap" data-tags='运营'>运营</text>
+    <text bindtap="bindtap" data-tags='助理'>助理</text>
+    <text bindtap="bindtap" data-tags='会计'>会计</text>
+    <text bindtap="bindtap" data-tags='运营'>运营</text>
+    <text bindtap="bindtap" data-tags='助理'>助理</text>
+    <text bindtap="bindtap" data-tags='会计'>会计</text>
+  </view>
+  <view class='search_history' wx:if="{{sendKeyword.length != 0}}" >历史搜索</view>
+  <view>
+  <!--{{sendKeyword.length != 0?'all_history':''}}  -->
+  <view class="">
+    <view wx:for="{{sendKeyword}}" wx:key="sendKeyword" class='search_results'>{{item}}</view>
+  </view>
+  <modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChangeConfirm" bindcancel="modalChangeCancel">
+    <view> 确定要清除历史记录吗? </view>
+  </modal>
+  <view class='search_clear' wx:if="{{sendKeyword.length != 0}}" bindtap="clearSearch">清除历史记录</view>
+  </view>
+</view>
+
+<!-- 搜索内容 -->
+<view class='job_post' wx:if="{{job_post}}">
+  <navigator url='../JobDetails/JobDetails?id={{item.id}}' class='work_post'>
+    <image class='work_logo' mode='' src='../../../img/test.png'></image>
+    <text class='work_name'>产品助理</text>
+    <text class='work_pay'>¥5000-8000</text>
+    <text class='firm_name'>保利科技</text>
+    <text class='area_edu_exp'>
+      <text class='aee_li'>朝阳<text>|</text></text>
+    <text class='aee_li'>大专<text>|</text></text>
+    <text class='aee_li'>经验不限</text>
+    </text>
+    <view class='mianshi_time'>面试时间:
+      <text class='mianshi_time_color text_color'>2月27日(周二)10:00-16:00</text>
+    </view>
+  </navigator>
+</view>

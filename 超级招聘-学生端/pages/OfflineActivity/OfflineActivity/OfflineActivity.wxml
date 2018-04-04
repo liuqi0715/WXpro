@@ -1,0 +1,60 @@
+<!--pages/OfflineActivity/nav/nav.wxml-->
+<view class='flex_aic nav'>
+  <view class='nav_list nav_li_right'>
+    <view bindtap='open_box' data-type='0' class="nav_li_tit {{box_zhiwu?'text_color':''}}">
+      <text>{{city_xz}}</text>
+      <text class="iconfont icon-xiala {{box_zhiwu?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_zhiwu}}">
+      <view bindtap='open_box' data-type='0' class='box_bg'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <view bindtap='bindtap' data-type='0'  data-tit="{{item.title}}" wx:for="{{zhiwu_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == zhiwu_active?'text_color':''}}">
+          <text>{{item.title}}</text>
+            <icon wx:if="{{item.id == zhiwu_active}}" type="success_no_circle" size="15" color="#ED7701"/>
+        </view>
+      </view>
+    </view>
+    <!-- box en.d -->
+  </view>
+  <view class='nav_list'>
+    <view bindtap='open_box' data-type='1' class="nav_li_tit {{box_source?'text_color':''}}">
+      <text>{{time_xz}}</text>
+      <text class="iconfont icon-xiala {{box_source?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_source}}">
+      <view bindtap='open_box' data-type='1' class='box_bg'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <view bindtap='bindtap' data-type='1' data-tit="{{item.title}}" wx:for="{{source_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == source_active?'text_color':''}}">
+          <text bindtap='off_box'>{{item.title}}</text>
+            <icon wx:if="{{item.id == source_active}}" type="success_no_circle" size="15" color="#ED7701"/>
+        </view>
+      </view>
+    </view>
+    <!-- box end -->
+  </view>
+</view>
+
+<view class='container'>
+  <view class='theme' wx:for="{{activity}}" wx:key="{{item.id}}">
+    <view class='theme_name'><text class='text_color_black'>{{item.name}}</text></view>
+    <view class='content'>
+      <view class='content_left'>
+      <view class='box_img'><image mode='' src='{{item.img}}' /></view>
+      <text class='city'>{{item.city}}</text>
+      </view>
+      <view class='content_right'>
+        <text>日期：{{item.time}}\n规模：{{item.much}}\n岗位：{{item.posts}}\n地点：{{item.place}}</text>
+        <view class='navto'>
+          <navigator class='bg_color navli' url='../Activity/Activity'>查看详情</navigator>
+          <navigator class='bg_color navli' url='../Enterprise/Enterprise'>参与企业</navigator>
+          <navigator url='../JobSel/JobSel' class='bg_color navli'>职位列表</navigator>
+        </view>
+      </view>
+    </view>
+    <view class='clear_float'></view>
+    <view class='bottom_color'></view>
+  </view>
+  <view class='clear_float'></view>
+</view>

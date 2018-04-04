@@ -1,0 +1,20 @@
+<!--pages/My/MyTestOne/MyTestOne.wxml-->
+<view class='content' wx:for="{{array}}" wx:key="{{item.id}}">
+  <view>
+    <text class='text_font'>{{item.num}}.我是一位</text>
+    <text class='text_black'>{{item.message}}</text>
+    <text class='text_font'>人</text>
+  </view>
+  <view class='choose'>
+    <radio-group bindchange="radioChange">
+      <label class="ui-radio {{radio.checked?'bg_color':''}}" wx:for="{{item.items}}" wx:for-item="radio" wx:key="key">
+        <radio value="{{item.id}}-{{radio.value}} " checked="{{radio.checked}}" />
+        <text class="text">{{radio.name}}</text>
+      </label>
+    </radio-group>
+  </view>
+</view>
+<view class='btn btn2'>
+  <navigator open-type="navigateBack" delta="1" class='text_color previous'>返回上一页</navigator>
+  <navigator url='../MyTestSubmit/MyTestSubmit' class='bg_color next'>下一页</navigator>
+</view>

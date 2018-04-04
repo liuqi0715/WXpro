@@ -1,0 +1,12 @@
+<!--pages/Index/JobName/JobName.wxml-->
+<!-- <text>pages/Index/JobName/JobName.wxml</text> -->
+<view class='search_row' bindtap="">  
+    <view class='search_kuang'>
+      <text class='iconfont icon-sousuo'></text> 
+      <input class="search_name" placeholder="输入职位" bindinput='input' value="{{}}"/>
+    </view>
+    <view class='search_go' catchtap='searchMt'>搜索</view>
+</view> 
+<view class='wrapper'> 
+  <list-html data="{{city}}" binddetail="bindtap" search="{{value}}"></list-html>
+</view> 

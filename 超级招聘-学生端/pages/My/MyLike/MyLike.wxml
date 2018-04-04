@@ -1,0 +1,39 @@
+<!--pages/My/MyLike/MyLike.wxml-->
+<view class='my_top flex_acjb'>
+  <navigator url='../InvMe/InvMe' class='top_word'>
+    <image src="../../../img/yaoqing.png"></image>
+    <view class='word'>
+      <text>邀请我的</text>
+    </view>
+  </navigator>
+  <navigator url='../DeliveryRecords/DeliveryRecords' class='top_word'>
+      <image src="../../../img/touid.png"></image>
+    <view class='word'>
+      <text>我投递的</text>
+    </view>
+  </navigator>
+  <navigator url='../Collect/Collect' class='top_word'>
+    <image src="../../../img/shoucang.png"></image>
+    <view class='word'>
+      <text>我的收藏</text>
+    </view>
+  </navigator>
+</view>
+<view class='bg_white'>
+  <navigator url='../MyTest/MyTest' class='flex_acjb content'>
+    <text>职业测评</text>
+    <text class='iconfont icon-you'></text>
+  </navigator>
+  <view class='flex_acjb content'>
+    <text>我的积分</text>
+    <text class='iconfont icon-you'></text>
+  </view>
+  <view class='flex_acjb content'>
+    <text>换皮肤</text>
+    <text class='iconfont icon-you'></text>
+  </view>
+  <navigator url='../BroHistory/BroHistory' class='flex_acjb content_bottom'>
+    <text>浏览历史</text>
+    <text class='iconfont icon-you'></text>
+  </navigator>
+</view>

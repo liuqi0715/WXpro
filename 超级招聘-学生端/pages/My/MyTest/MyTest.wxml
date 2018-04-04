@@ -1,0 +1,28 @@
+<!--pages/My/MyTest/MyTest.wxml-->
+<view class='logo'>
+  <image mode='widthFix' src='../../../img/banner.png'></image>
+</view>
+<view class='test_content'>
+  <view class='test_title'>
+    <text>问卷填写指导</text>
+  </view>
+  <view class='text_font'>
+    <text>这个问卷是要了解你自然本我的特质(天生本质的性格)；与学习或生活都无关。</text>
+  </view>
+</view>
+<view class='test_content'>
+  <view class='test_title'>
+    <text>示范题</text>
+  </view>
+  <view class='text_font'>
+    <text>我是一个热情的人......1 2 3 4 5\n若你感觉自己是\n[非常热情的人]，请将 5 选中；\n[一点都不热情]，请将 1 选中；\n[一般，有时热情有时不热情]，请将 3 选中；\n\n请记住用直觉、第一反应选中最适当的数字</text>
+  </view>
+  <view class='font_red'>
+    <text>【答题时间3分钟】</text>
+  </view>
+  <view>
+    <view class='start_test bg_color'>
+      <navigator url='../MyTestOne/MyTestOne'>开始测评</navigator>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,93 @@
+/* pages/Index/Search/Search.wxss */
+@import "../Index/Index.wxss";
+page{
+  background: #f5f5f5;
+}
+.search_row {
+  background: #ed7701;
+  padding: 10px 10px 10px 0px;
+}
+
+.search_kuang {
+  border: 1px solid #ed7701;
+  margin-left: 20rpx;
+  background: white;
+  border-radius: 50rpx;
+  padding: 5px;
+  width: 80%;
+}
+
+.icon-sousuo {
+  float: left;
+  color: #ed7701;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-right: 20rpx;
+}
+
+.search_name {
+  font-size: 30rpx;
+}
+
+.search_go {
+  float: right;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: white;
+  font-size: 35rpx;
+}
+
+/* 热门搜索 */
+
+.search_hot {
+  margin: 20px 15px 15px 10px;
+  font-size: 40rpx;
+  color: black;
+}
+
+.search_biaoqian{
+  display: flex;
+  flex-wrap: wrap;
+  padding:0 10px;
+}
+.search_biaoqian>text {
+  font-size: 30rpx;
+  margin:0 10px 10px 0;
+  padding: 5px 10px;
+  border: 1px solid lightgray;
+  background: white;
+  color: #666;
+}
+
+/* 历史搜索
+ */
+.search_history{
+  margin: 20px 15px 10px 10px;
+  font-size: 40rpx;
+  color: black;
+
+}
+/* .all_history {
+  border-bottom: 1px solid lightgrey;
+   border-top: 1px solid lightgrey; 
+  
+  font-size: 30rpx;
+} */
+.search_results {
+  padding: 10px 10px;
+  font-size: 30rpx;
+  /* border-bottom: 1px solid lightgrey; */
+   border-top: 1px solid lightgrey;
+   background: white;
+}
+.search_clear{
+  padding: 10px;
+  background: white;
+  text-align: center;
+  border-top: 1px solid lightgrey;
+  font-size: 35rpx;
+}
+.job_post{
+  margin-top: 30px;
+}

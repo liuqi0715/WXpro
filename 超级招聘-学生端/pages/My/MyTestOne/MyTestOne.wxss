@@ -1,0 +1,59 @@
+/* pages/My/MyTestOne/MyTestOne.wxss */
+
+.content{
+  padding: 10px 10px 0;
+}
+.text_font{
+  color: #666666;
+  font-size: 17px;
+}
+.text_black{
+  color: #333333;
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0px 5px;
+}
+ .choose{
+  padding: 10px 0;
+} 
+.choose radio-group{
+  display: flex;
+  align-items: center;
+}
+.start_test{
+  border-radius: 15px;
+  width: 65%;
+  height: 40px;
+  line-height: 40px;
+  /* padding-top: 5px; */
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 30px;
+  text-align: center;
+}
+/* 单选样式 */
+.ui-radio radio,.ui-radio checkbox {
+  display: none;
+}
+.ui-radio{
+  flex-grow: 1;
+  margin-right: 20px;
+  padding: 5px 10px;
+  background-color: #ccc;
+  border-radius: 5px;
+  color: white;
+  text-align: center;
+}
+.ui-radio:nth-child(5n){
+  margin-right: 0;
+}
+.ui-radio .text {
+/*设计样式*/
+  
+}
+.ui-radio.checked .text {
+/*设计样式*/
+  background-color: #ED7701;
+  color: #fff;
+}

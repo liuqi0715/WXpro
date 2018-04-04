@@ -1,0 +1,269 @@
+/* pages/Index/JobDetails/JobDetails.wxss */
+ page{
+  background: #f5f5f5;
+  padding-bottom: 60px;
+} 
+view,text,modal{
+  box-sizing: border-box;
+}
+.work_details {
+  background: white;
+}
+
+.job_name {
+  padding: 10px 10px 0;
+  font-size: 40rpx;
+}
+.job_name{
+  color: black;
+}
+.month_pay {
+  float: right;
+  color: red;
+  font-size: 30rpx;
+}
+
+.my_biaoqian {
+  padding: 5px 10px;
+  font-size: 30rpx;
+}
+
+.my_biaoqian>text {
+  padding: 0 8px;
+  line-height: 30rpx;
+}
+
+.qiye_biaoqian {
+   padding: 0 10px 10px; 
+}
+
+.qiye_biaoqian>text {
+  border: 1px solid #eee;
+  padding: 2px 8px;
+  color: #ed7701;
+  font-size: 28rpx;
+  margin: 0px 10px 0px 0;
+}
+
+/* 面试相关 */
+
+.ms_related {
+  margin-top: 10px;
+  background: white;
+  font-size: 30rpx;
+}
+
+.ms_time {
+  padding: 10px 0 10px 10px;
+}
+
+.ms_time text:nth-child(1) {
+  /* color: red; */
+}
+
+.ms_time text:nth-child(2) {
+  color: #999;
+  /* font-weight: bold; */
+}
+
+.ms_adress {
+  padding: 10px;
+  display: flex;
+  border-top: 1px solid #eee;
+}
+
+.work_adress {
+  float: left;
+}
+
+.xq_adress {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 48%;
+  color: black;
+}
+
+.ms_sq {
+  color: #ed7701;
+  flex-wrap: nowrap;
+}
+
+.job_adress {
+  padding: 10px 10px 0;
+  display: flex;
+  border-top: 1px solid #eee;
+}
+
+.ms_sq _two {
+  color: #ed7701;
+  flex-direction: column;
+}
+
+.wz_juli {
+  /* position: relative; */
+  padding-bottom: 10px;
+  padding-top: 5px;
+  font-size: 25rpx;
+  margin-left: calc(5em + 20px);
+  /* left: 22.5%; */
+}
+
+/* 公司 */
+
+.work_job {
+  margin-top: 10px;
+  padding:10px;
+  background: white;
+}
+
+/* 公司logo */
+
+.work_logo{
+  height: 50px;
+  width: 50px;
+  float: left; 
+  /* padding: 5px; */
+  border-radius: 5px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+/* 公司名字 */
+
+.work_name {
+  color: black;
+}
+
+/* 公司性质,人数 */
+
+.area_edu_exp {
+  /* margin: 10px; */
+  font-size: 30rpx;
+  left: 10px;
+}
+
+/* 公司行业 */
+
+.firm_name {
+  font-size: 30rpx;
+}
+
+/* 查看企业介绍 */
+
+.look_qiye {
+  color: #ed7701;
+  float: right;
+  margin-right: 10px;
+  font-size: 30rpx;
+}
+
+/* 能力要求 */
+
+.nl_yq {
+  margin-top: 10px;
+  background: white;
+  padding: 10px 5px;
+}
+
+.icon-jianguanxinxicaiji, .icon-xiaofeiquan, .icon-liwu {
+  color: #ed7701;
+  font-size: 40rpx;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  margin-left: 5px;
+}
+.fuli::before{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAC60lEQVRYhe2XzY9MaRSHHxILi9HSCcZ3QlqsbOwsxNdCt//ALCwkrIT6uOfMsiXMbKxJkEiExAJjY5oWQTTxMQstIaGJSHVmVN17DpHxUaKrLPplKt233VsRNlNvclbnd0499/e+de57obNyrmd7mG1K0ZTLptxx5aArW4BpeepNWePCbybcNOWWK/trET1tQSQFFrow7EpzYphwMy6zbqrauMgKU06n1bpgSZkNuUFMOBCKzyUlVlYLLPOIPheutgCVJtVFbHYlCfmHibCtFtFTLbDMlf2uNE253A7IKVeatRJrU3LbXXkVgH7/4oTwiytj4cf2VgrMbK2rFOh2oeHCcG4QF3YEK4+n5WsRPa7cC5p9rmx14aML5kpvak9lZ4A8lgnQD9NNWZMI20x5F576V4vY7BF9HtHnSm8srDel6Ep9wvk5HJdZ50rvZ33Yrq0uvHShYcreRNhou5iVCvF3iaWuXE89ZN8nnibCxjTrTgarh0052xou/DExvuSFqgsNE/7M1I7rz7Qc+vuTQEx55Eo93sP8zD1srRMGXBmb0uqp62678D7NkRET/nWlq82Gg66M1SJ+bqtOuejCh7SGj015UynQ/YNALrlSn5T4Vkequ5nXZt2FVEdcGXGlbsKiNhsOhEHW3gOMv78mO5IIh8LAeWDCeRMumDCYFa4kLjRcuZapVy6G3kNh7gylOdJlwtEJ//V6ZoxDNF34kEPfOvwG4iIrUu3qH5+soya8joX1lQLdWWHCDVea1TKrsrTViOUmPHShEZdYPeW+udLlyitTHuXd68/DKRYW5NG3uL7l6yDCS1dG/trBjFwgyrXQeEkuEOWYK02P6OuAdEA6IB2Q7wsSJms/TG8HxIoszgUiHMmcrLHwUwAZzXv1c+WKK80XZebmBDnvSjMps+lrumktn4tPTRjKEW/D2/Rultb/+xZ6knl/+WcXc1w4YULFBcsKU0ZdeR7uJVnaFyYMVsusyuPe/3t9AovDuDrCyEoVAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.icon-jianguanxinxicaiji text, .icon-xiaofeiquan text, .icon-liwu text {
+  color: black;
+  margin-left: 10px;
+}
+
+.rz_yq {
+  font-size: 30rpx;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+/* 工作内容 */
+
+.gz_nr {
+  margin-top: 10px;
+  background: white;
+  padding: 10px 5px 0 5px;
+}
+
+.rz_nr {
+  font-size: 30rpx;
+  line-height: 40rpx;
+  padding: 5px;
+}
+
+/* 职位福利 */
+
+.zhiwei_fl {
+  font-size: 30rpx;
+  padding: 15px;
+}
+
+/* 收藏,分享,申请 */
+
+.zhiwei_bottom {
+  border-top: 1px solid #eee;
+  background: white;
+  padding: 0px 0px 0px 10px;
+  text-align: center;
+  display: flex;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.zhiwei_share {
+  width: 20%;
+  /* padding-top: 5px; */
+  font-size: 30rpx;
+  border-right: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.zhiwei_share>view, .zhiwei_collect>view {
+  font-size: 30rpx;
+}
+
+.zhiwei_collect {
+  width: 20%;
+  /* padding-top: 5px; */
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.zhiwei_apply {
+  width: 60%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  background-color: #ed7701;
+  color: white;
+}
+/* 收藏图标 */
+.icon-shoucang1{
+  /* background: #ed7701; */
+  color: #ed7701;
+}

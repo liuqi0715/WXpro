@@ -1,0 +1,141 @@
+<!--pages/ResumeDetails/ResumeDetails.wxml-->
+<view class='RD'>
+  <!-- 顶部头像信息 -->
+  <view class='RD_user'>
+    <view>
+      <image src='{{details.avatar}}'></image>
+    </view>
+    <view class='RD_userInfo'>
+      <text>{{details.nickName}}</text>
+    </view>
+  </view>
+
+  <!-- 基本信息 -->
+  <view class='details'>
+    <view class='details_tit'>
+      <view>基本信息</view>
+      <view class='details_tit_bottom bg_color'></view>
+    </view>
+
+    <view class='details_content info'>
+      <view>
+        <text class='iconfont icon-yonghu text_color'></text>
+        <text wx:if="{{details.sex == 0}}">女</text>
+        <text wx:if="{{details.sex == 1}}">男</text>
+        <text>{{details.age}}岁</text>
+        <text>学历: {{details.education}}</text>
+      </view>
+      <view>
+        <text class='iconfont icon-dingwei text_color'></text>
+        <text>{{details.address}}</text>
+      </view>
+      <view>
+        <text class='iconfont icon-shouji text_color'></text>
+        <text>{{details.phone}}</text>
+      </view>
+      <view>
+        <text class='iconfont icon-13 text_color'></text>
+        <text>{{details.email}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 求职意向 -->
+  <view class='details'>
+    <view class='details_tit'>
+      <view>求职意向</view>
+      <view class='details_tit_bottom bg_color'></view>
+    </view>
+
+    <view class='details_content'>
+      <view class='flex_acjb qiuzhi'>
+        <text>{{details.position}}</text>
+        <text>{{details.qiuzhi_state}}</text>
+      </view>
+      <view>
+        <text>{{details.industry}}</text>
+      </view>
+      <view>
+        <text>{{details.old_info}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 个人优势 -->
+  <view class='details'>
+    <view class='details_tit'>
+      <view>个人优势</view>
+      <view class='details_tit_bottom bg_color'></view>
+    </view>
+
+    <view class='details_content'>
+      <view>
+        <!-- // 引入模板 -->
+        <import src="/wxParse/wxParse.wxml" />
+        <!-- //这里data中article为bindName -->
+        <template is="wxParse" data="{{wxParseData:advantage.nodes}}" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 工作经历 -->
+  <view class='details'>
+    <view class='details_tit'>
+      <view>工作经历</view>
+      <view class='details_tit_bottom bg_color'></view>
+    </view>
+
+    <view class='details_content work_experience'>
+      <view class='WE_li' wx:for="{{details.work_experience}}" wx:key="{{item.id}}">
+        <view wx:if="{{index > 0}}" class='details_tit_bottom bg_color'></view>
+        <view class='WE_name flex_acjb'>
+          <text>{{item.WE_name}}</text>
+          <text>{{item.date}}</text>
+        </view>
+        <view>{{item.zhiwei}}</view>
+        <view>
+          <view>工作内容：</view>
+          <view>
+            {{item.content}}
+          </view>
+        </view>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 教育背景 -->
+  <view class='details'>
+    <view class='details_tit'>
+      <view>教育背景</view>
+      <view class='details_tit_bottom bg_color'></view>
+    </view>
+
+    <view class='details_content'>
+      <view wx:for="{{details.edu_bg}}" wx:key="{{index}}">
+        <view class='flex_acjb edu_bg'>
+          <text>{{item.name}}</text>
+          <text>{{item.date}}</text>
+        </view>
+        <view>{{item.education}}-{{item.major}}</view>
+      </view>
+
+    </view>
+  </view>
+
+  <!-- 面试评价 -->
+  <!-- <view class='details'>
+    <view class='details_tit'>
+      <view>面试评价({{details.evaluate}})</view>
+      <view class='details_tit_bottom bg_color'></view>
+    </view>
+
+    <view class='details_content'>
+
+    </view>
+  </view> -->
+
+  <view class='bottom_box'></view>
+
+
+</view>

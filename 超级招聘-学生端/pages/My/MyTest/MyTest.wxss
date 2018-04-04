@@ -1,0 +1,32 @@
+/* pages/My/MyTest/MyTest.wxss */
+
+.logo image{
+  width: 100vw;
+}
+.test_content{
+  margin: 20px 30px 0px 30px;
+  text-align: center;
+}
+.test_title{
+  color: #000000;
+  margin-bottom: 10px;
+}
+.text_font{
+  font-size: 15px;
+  color: #333333;
+  text-align: left;
+}
+.font_red{
+  color: red;
+  margin-top: 20px;
+}
+.start_test{
+  border-radius: 15px;
+  width: 70%;
+  height: 35px;
+  padding-top: 5px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 20px;
+}

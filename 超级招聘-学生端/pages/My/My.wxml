@@ -1,0 +1,72 @@
+<!--pages/My/My.wxml-->
+<!-- 头部信息 -->
+<view id="header">
+    <view class="img_box">
+      <image src="{{head_img}}" class="head"></image>
+      <image src="../../img/bianji.png" class="bianji" bindtap='upload'></image>
+    </view>
+  
+    <view class="name">王小蕊 女 23岁</view>
+    <navigator url='./ResumeDetails/ResumeDetails' class="preview">预览简历</navigator>
+</view>
+
+<!-- 基本信息 -->
+<view class="lists_box box1">
+    <navigator url="BasicInformation/BasicInformation" class="list flex_acjb text_333" hover-class='none'>
+        <view class="text">基本信息</view>
+        <view class="iconfont icon-you"></view>
+    </navigator>
+     <navigator url="JobIntention/JobIntention" class="list flex_acjb text_333" hover-class='none'>
+        <view class="text">求职意向</view>
+        <view class="iconfont icon-you"></view>
+    </navigator> 
+     <navigator url="PersonalAdvantage/PersonalAdvantage" class="list flex_acjb text_333" hover-class='none'>
+        <view class="text">个人优势</view>
+        <view class="iconfont icon-you"></view>
+    </navigator> 
+</view>
+
+<!-- 工作经历 -->
+<view class="lists_box">
+    <navigator url="WorkExperience/WorkExperience" class="list flex_acjb text_333" hover-class='none'>
+        <view class="text">北京慕容信息科技有限公司</view>
+        <view class="iconfont">2017.03-2018.02<text class="icon-you"></text></view>
+    </navigator>
+      <navigator url="WorkExperience/WorkExperience" class="list flex_acjb text_333" hover-class='none'>
+        <view class="text">北京华清上才教育科技有限 公司</view>
+        <view class="iconfont">2016.09-2017.12<text class="icon-you"></text></view>
+    </navigator>
+    <navigator url="Addexperience/Addexperience" class="add list" hover-class='none'>+工作经历</navigator>
+</view>
+
+<!-- 教育背景 -->
+<view class="lists_box">
+    <navigator url="EducationalBackground/EducationalBackground" class="list flex_acjb text_333" hover-class='none'>
+        <view class="text">河南财经政法大学</view>
+        <view class="iconfont">1010.09-2014.06<text class="icon-you"></text></view>
+    </navigator>
+    
+    <navigator url="AddEducation/AddEducation" class="add list" hover-class='none'>+教育背景</navigator>
+</view>
+
+<!-- 学历认证 -->
+<view class="lists_box">
+    <navigator url="DiplomaCertification/DiplomaCertification" class="list flex_acjb text_333">
+        <view class="text">学历认证</view>
+        <view class="iconfont icon-you"></view>
+    </navigator>
+</view>
+<!-- 我喜欢的 -->
+<view class="lists_box">
+    <navigator url="./MyLike/MyLike" class="list flex_acjb text_333">
+        <view class="text">我喜欢的</view>
+        <view class="iconfont icon-you"></view>
+    </navigator>
+</view>
+<!-- 设置 -->
+<view class="lists_box">
+    <navigator url="./ChangePwd/ChangePwd" class="list flex_acjb text_333">
+        <view class="text">设置</view>
+        <view class="iconfont icon-you"></view>
+    </navigator>
+</view>

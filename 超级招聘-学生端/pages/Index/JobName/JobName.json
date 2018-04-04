@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择职位",
+  "usingComponents": {
+    "list-html": "../../../component/job-name/job-name"
+  }
+}

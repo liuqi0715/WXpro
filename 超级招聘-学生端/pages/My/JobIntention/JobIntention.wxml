@@ -1,0 +1,76 @@
+<!--pages/My/BasicInformation/BasicInformation.wxml-->
+
+<form bindsubmit="savePersonInfo">
+  <view class="lists">
+    <!-- 期望工作地  -->
+    <view class="list flex_acjb">
+      <view class="left">期望工作地</view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}" class="right">
+        <view class="picker">
+          {{region[0]}}-{{region[1]}}-{{region[2]}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+    </view>
+    <!-- 期望行业 -->
+    <view class="list flex_acjb">
+      <view class="left">期望行业</view>
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}" class="right">
+        <view class="picker">
+          {{multiArray[0][multiIndex[0]]}}/{{multiArray[1][multiIndex[1]]}}/{{multiArray[2][multiIndex[2]]}}
+        </view>
+      </picker>
+    </view>
+    <!--  期望职务  -->    
+    <view class="list flex_acjb">
+      <view class="left">期望职务</view>
+      <picker bindchange="postChange" value="{{postIndex}}" range="{{post}}" class="right">
+        <view class="picker">
+          {{post[postIndex]}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+    </view>
+    <!--  期望薪酬  -->    
+    <view class="list flex_acjb">
+      <view class="left">期望薪酬</view>
+      <picker bindchange="payChange" value="{{payIndex}}" range="{{pay}}" class="right">
+        <view class="picker">
+          {{pay[payIndex]}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+    </view>
+    <!--  企业类型  -->    
+    <view class="list flex_acjb">
+      <view class="left">企业类型</view>
+      <picker bindchange="typesChange" value="{{typesIndex}}" range="{{types}}" class="right">
+        <view class="picker">
+          {{types[typesIndex]}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+    </view>
+  </view>
+
+   <view class="lists">
+    <!--  求职状态  -->    
+    <view class="list flex_acjb">
+      <view class="left">求职状态</view>
+      <picker bindchange="statusChange" value="{{statusIndex}}" range="{{status}}" class="right">
+        <view class="picker">
+          {{status[statusIndex]}}
+          <text class="iconfont icon-you"></text>
+        </view>
+      </picker>
+    </view>
+  </view>
+ 
+  <button formType="submit" class="save-btn">保 存</button>
+</form>
+
+
+
+
+
+

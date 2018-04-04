@@ -1,0 +1,82 @@
+/* pages/My/My.wxss */
+page{
+  background-color:#EBF0F3;
+  padding-bottom:15px;
+}
+/* 头部信息 */
+#header{
+  height:135px;
+  width:100%;
+  background: linear-gradient(#EE7700, #FFB56B);
+  position: relative;
+  text-align: center;
+  padding-top:10px;
+  color:#fff;
+  font-size:14px;
+}
+#header .img_box{
+  position: relative;
+  width:74px;
+  margin:0 auto;
+}
+#header .head{
+  height:70px;
+  width:70px;
+  border-radius:50%;
+  margin-bottom:10px;
+  border:2px solid #fff;
+}
+#header .bianji{
+  position: absolute;
+  width:20px;
+  height:20px;
+  bottom:20px;
+  right:-5px;
+}
+#header .preview{
+  position: absolute;
+  right:13px;
+  top:25px;
+  border:1px solid #FBCD9F;
+  padding:2px 15px;
+  border-radius:5px;
+  background-color:rgba(255,255,255,0.2);
+  font-size:14px;
+}
+
+/* 基本信息 */
+.lists_box{
+  padding:0 10px;
+  font-size:14px;
+  color:#333;
+  background-color:#fff;
+  margin-bottom:10px;
+}
+.lists_box .list{
+  padding: 10px 0;
+  border-bottom:1px solid #EBEBEB;
+}
+.lists_box .list:last-child{
+  border:0;
+}
+.lists_box .text{
+  flex-grow:1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.lists_box .iconfont{
+  font-size:14px;
+  color:#999;
+  flex-shrink:0;
+  margin-left:10px;
+}
+.lists_box .icon-you{
+  margin-left:5px;
+}
+.lists_box .add{
+  text-align: center;
+  color:#EE7700;
+}
+
+/* <!-- 认证/喜欢/设置 --> */

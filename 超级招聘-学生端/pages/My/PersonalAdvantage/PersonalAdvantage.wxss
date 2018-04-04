@@ -1,0 +1,74 @@
+/* pages/My/PersonalAdvantage/PersonalAdvantage.wxss */
+page{
+  background-color:#EBF0F3; 
+}
+textarea{
+  box-sizing: border-box
+}
+
+
+#box{
+  background-color:#fff;
+  padding:10px 10px 0;
+  font-size:14px;
+}
+#box .titles{
+  color:#EE7700;
+  padding:8px 0;
+}
+/* 输入框 */
+#text{
+  width:100%;
+  height:120px;
+}
+
+.look{
+  padding:8px 0;
+  border-top:1px solid #eee;
+}
+.look .left{
+  color:#EE7700;
+}
+
+/* 实例窗 */
+#window{
+  width:calc(100% - 30px);
+  background-color:#fff;
+  padding:0 10px 8px;
+  margin:15px auto;
+  position: relative;
+  font-size:14px;
+}
+#window .sanjiao{
+  width: 0;
+    height: 0;
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    position: absolute;
+    top:-10px;left:0;
+}
+#window .top{
+  padding:8px 0;
+  border-bottom:1px solid #eee;
+  margin-bottom:8px;
+}
+#window .types{
+  color:#333;
+}
+#window .text{
+  color:#333;
+}
+
+
+.save-btn {
+    width: 60%;
+    height: 80rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 80rpx;
+    background-color: #EE7700;
+    border-radius:60px;
+    color: #fff;
+    margin-top:15px;
+}

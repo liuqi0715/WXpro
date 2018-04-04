@@ -1,0 +1,99 @@
+/* pages/My/MsAsk/MsAsk.wxss */
+page{
+  background: white;
+  color: #333;
+  font-size: 30rpx;
+  padding-bottom: 60px;
+}
+
+/* 标题 */
+.title{
+  color: #000;
+  font-size: 40rpx;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.claa_name{
+    margin: 10px;
+}
+.ms_job_name{
+  margin: 10px;
+  text-indent: 2em;
+  line-height: 60rpx;
+}
+.go_time{
+  margin: 10px;
+  text-indent: 2em;
+  line-height: 60rpx;
+}
+.wz_rem{
+  margin: 10px;
+
+}
+.wz_rem>view{
+  text-indent: 4em;
+}
+.person_to{
+  margin: 30px 10px 5px 10px;
+}
+.call_tel{
+  margin: 5px 10px;
+}
+.e_mail{
+  margin: 5px 10px;
+}
+.zf_ask{
+  margin: 30px 10px 5px 10px;
+}
+.zf_ask>view{
+  margin: 5px 0;
+}
+.renshibu{
+  margin: 5px 10px;
+}
+.renshibu>text{
+  margin-left: 5px;
+}
+/* 选择按钮 */
+.ms_select{
+   border-top: 1px solid #eee;
+  background: white;
+  text-align: center;
+  display: flex;
+  height: 100rpx;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+/* 拒绝 */
+.jujue_sel {
+  width: 33.333333333333%;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #999999;
+}
+
+/* 同意 */
+.tongyi_sel {
+    width: 33.333333333333%;
+  font-size: 30rpx;
+  display: flex;
+    background-color: #ee7700;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 聊聊 */
+.talk_sel {
+    width: 33.333333333333%;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 35rpx;
+  background-color: #00b2eb;
+  color: white;
+}

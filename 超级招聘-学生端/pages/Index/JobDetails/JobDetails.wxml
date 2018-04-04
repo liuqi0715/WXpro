@@ -1,0 +1,103 @@
+<!--pages/Index/JobDetails/JobDetails.wxml-->
+<!-- <text>pages/Index/JobDetails/JobDetails.wxml</text> -->
+<!-- 顶部职位 -->
+<view class='work_details'>
+  <view class='job_name'>
+    <text>高级客户经理</text>
+    <text class='month_pay'>¥9000-15000</text>
+  </view>
+
+  <view class='my_biaoqian'>朝阳
+    <text>|</text>大专
+    <text>|</text>经验不限</view>
+  <view class='qiye_biaoqian'>
+    <text>上市公司</text>
+    <text>晋升超快</text>
+    <text>快速提升自己</text>
+    <text>带薪休假</text>
+  </view>
+</view>
+<!-- 面试相关 -->
+<view class='ms_related'>
+  <view class='ms_time'>
+    <text>面试时间：</text>
+    <text>2月26日(周一)14：00</text>
+  </view>
+  <view class='ms_adress'>
+    <view class='work_adress'>面试地址：</view>
+    <view class='xq_adress'>海淀区中关村互联网文化创意基地</view>
+    <view class='ms_sq'>申请成功可查看</view>
+  </view>
+  <view class='job_adress'>
+    <text class='work_adress'>工作地址：</text>
+    <text class='xq_adress'>北京市朝阳区酒仙桥北路甲1008</text>
+    <text class='ms_sq'>申请成功可查看</text>
+    <view class='clear_flex'></view>
+  </view>
+  <view class='wz_juli'>未获取到您的位置,无法计算距离</view>
+</view>
+<!-- 公司 -->
+<view class='work_job'>
+  <image class='work_logo' mode='' src='../../../img/test.png'></image>
+  <text class='work_name'>保利科技</text>
+  <view class='look_qiye' bindtap='goDetails'>查看企业介绍</view>
+  <view class='area_edu_exp'>
+    <text class='aee_li'>国企<text>|</text></text>
+    <text class='aee_li'>100-500人</text>
+  </view>
+  <text class='firm_name'>互联网</text>
+</view>
+<!-- 能力要求 -->
+<view class='nl_yq'>
+  <view class='iconfont icon-jianguanxinxicaiji'>
+    <text>能力要求</text>
+  </view>
+  <view class='rz_yq'>
+    <view>1、对楼盘进行宣传、热情接待、细致讲解、耐心服务，为客户提供满意的咨询,做好对客户的追踪和联系；</view>
+    <view>2、全面熟练地掌握楼盘的规划、设计、施工、管理情况，了解房地产法律、法规以及相关交易知识;</view>
+    <view>3、制定个人销售方案、计划，严格按照公司的销售价格及交房标准进行销售；</view>
+    <view>4、协助解决客户售后服务工作.</view>
+  </view>
+</view>
+<!-- 工作内容 -->
+<view class='gz_nr'>
+  <view class='iconfont icon-xiaofeiquan'>
+    <text>工作内容</text>
+  </view>
+  <view class='rz_nr'>
+    <view>1、对楼盘进行宣传、热情接待、细致讲解、耐心服务，为客户提供满意的咨询,做好对客户的追踪和联系；</view>
+    <view>2、全面熟练地掌握楼盘的规划、设计、施工、管理情况，了解房地产法律、法规以及相关交易知识;</view>
+    <view>3、制定个人销售方案、计划，严格按照公司的销售价格及交房标准进行销售；</view>
+    <view>4、协助解决客户售后服务工作.</view>
+  </view>
+</view>
+<!-- 职位福利 -->
+<view class='gz_nr'>
+  <view class='iconfont icon-liwu fuli'>
+    <text>职位福利</text>
+  </view>
+  <view class='zhiwei_fl'>
+    <text>五险一金、周末双休、公司旅游</text>
+  </view>
+</view>
+<!--投递,收藏,分享  -->
+<view class='zhiwei_bottom'>
+  <!-- 分享 -->
+  <view class='zhiwei_share' bindtap='shareGo'>
+    <text class='iconfont icon-iconfontzhizuobiaozhun20'></text>
+    <view>分享职位</view>
+  </view>
+  <!-- 收藏 -->
+  <view class='zhiwei_collect' bindtap='collectGo'>
+    <text class="iconfont {{collectChange?'icon-shoucang':'icon-shoucang1'}}"></text>
+    <view>收藏</view>
+  </view>
+  <!-- 申请 -->
+  <view class='zhiwei_apply' bindtap='toudiGo'>
+    <view>投递简历</view>
+  </view>
+</view>
+<!-- 模态框 -->
+<modal class="modal" hidden="{{modalHidden}}" bindconfirm="modalChangeConfirm" bindcancel="modalChangeCancel">
+  <view> {{titleName}}</view>
+</modal>

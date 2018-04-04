@@ -1,0 +1,53 @@
+/* pages/My/MyLike/MyLike.wxss */
+page{
+  background-color: #EEF3FA;
+}
+.my_top{
+  background-color: #fff;
+  height: 120px;
+  width: 100%;
+  padding: 0px 80rpx 0px 80rpx;
+}
+.my_top image{
+  width:30px;
+  height:30px;
+}
+.iconfont{
+  font-size: 30px;
+}
+.icon-aixin_fuzhi{
+  color: #FEE632;
+}
+.icon-quangou{
+  color: yellow;
+}
+.icon-xingxing1{
+  color: yellow;
+}
+.icon-you{
+  font-size: 15px;
+}
+.top_word{
+  text-align: center;
+  font-size: 16px;
+}
+.word{
+  margin-top: 10px;
+  color: #333333;
+}
+.bg_white{
+  background-color: white;
+  margin-top: 10px;
+  padding: 0px 20rpx 0px 20rpx; 
+}
+.content{
+  border-bottom: 1px solid #eee;
+  padding: 10px 0px;
+  font-size: 15px;
+  color: #333333;
+}
+.content_bottom{
+  padding: 10px 0px;
+  font-size: 15px;
+  color: #333333;
+}
