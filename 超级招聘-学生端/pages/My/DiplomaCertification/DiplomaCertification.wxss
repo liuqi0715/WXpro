@@ -1,0 +1,66 @@
+/* pages/My/DiplomaCertification/DiplomaCertification.wxss */
+.title{
+  color:#ED7700;
+  padding:10px 10px 0;
+  font-size:14px;
+}
+.title1{
+  font-size:14px;
+  padding:0 10px;
+}
+
+#upload{
+  text-align: center;
+  padding:10px 0;
+}
+#upload image{
+  width:570rpx;
+  height:400rpx;
+  border:2rpx solid #ED7700;
+}
+
+
+/* 展示的盒子 */
+#img_box{
+  padding:0 20rpx;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#img_box .list{
+  width:224rpx;
+  height:224rpx;
+  position: relative;
+  background-position:center;
+  background-size:cover;
+  background-repeat: no-repeat;
+  margin-bottom:10px;
+}
+#img_box .list:not(:nth-child(3n)){
+  margin-right:19rpx;
+}
+#img_box .list .del{
+  position: absolute;
+  background-color:rgba(0,0,0,0.5);
+  width:100%;
+  left:0;bottom:0;
+  color:#fff;
+  font-size:16px;
+  text-align: center;
+  padding:5px 0;
+}
+
+
+.save-btn {
+    width: 60%;
+    height: 80rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 80rpx;
+    background-color: #EE7700;
+    border-radius:60px;
+    color: #fff;
+    margin-top:15px;
+}
+

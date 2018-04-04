@@ -1,0 +1,18 @@
+<!--pages/My/DiplomaCertification/DiplomaCertification.wxml-->
+<view class="title">可上传9张证书</view>
+<view class="title1">上传学历证书，提高面试通过率~</view>
+
+<!-- 点击上传区 -->
+<view id="upload">
+  <image src="../../../img/upload_03.png" bindtap='upload'></image>
+</view>
+
+<!-- 展示图片的盒子 -->
+<view id="img_box">
+  <view class="list" wx:for="{{imgArr}}" wx:key="key" style="background-image:url({{item}})" bindtap='preview' data-index='{{item}}'>
+    <view class="del" data-index='{{index}}' bindtap='del'>删除</view>
+  </view>
+</view>
+
+
+ <button formType="submit" class="save-btn">保 存</button>
