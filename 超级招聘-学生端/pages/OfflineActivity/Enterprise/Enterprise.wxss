@@ -1,0 +1,118 @@
+/* pages/OfflineActivity/Enterprise/Enterprise.wxss */
+page{
+  background: #EEF3FA;
+}
+.content{
+  padding: 15px 0px;
+}
+.content_left{
+  width: 70px;
+  font-size: 15px;
+  float: left;
+  color: #666666;
+}
+.content_right{
+  width: 100px;
+  font-size: 12px;
+  float: right;
+  color: #666666;
+  padding-right: 10px;
+}
+.float-r{
+  float: right;
+  width: calc(100vw - 70px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 50px;
+}
+.tit{
+  font-size: 28rpx;
+}
+.clear_float{
+  clear: both;
+}
+.bottom_color{
+  height: 10px;
+  background-color: #EEF3FA;
+}
+image{
+  position: relative;
+  /* left: 55rpx; */
+  border-radius: 5px;
+  margin: 0 10px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+}
+.text_color_red{
+  font-size: 15px;
+  color: red;
+}
+.present{
+  font-size: 12px;
+}
+.top_search{
+  background-color: #ED7701;
+  padding: 10px 15px 10px 10px;
+}
+.search{
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  padding-left: 35px;
+  font-size: 15px;
+}
+.search_word{
+  color: white;
+  font-size: 15px;
+}
+.theme{
+  background: #fff;
+  margin-bottom: 10px;
+}
+.iconfont{
+  color: #ED7701;
+  font-size: 17px;
+  position: relative;
+   left: 60rpx 
+}
+.sosuo{
+  width: 90%;
+  margin-left: -10px;
+}
+/* 搜索 */
+.search_row {
+  background: #ed7701;
+  padding: 10px 10px 10px 0px;
+}
+
+.search_kuang {
+  border: 1px solid #ed7701;
+  margin-left: 20rpx;
+  background: white;
+  border-radius: 50rpx;
+  padding: 5px;
+  width: 80%;
+}
+
+.icon-sousuo {
+  float:left;
+  color:#ed7701;
+  margin-left:0;
+  margin-top:3px;
+  margin-right:25rpx;
+  left:18rpx;
+}
+
+.search_name {
+  font-size: 30rpx;
+}
+
+.search_go {
+  float: right;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+  color: white;
+}

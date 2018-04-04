@@ -1,0 +1,31 @@
+<!--pages/OfflineActivity/Enterprise/Enterprise.wxml-->
+
+<view class='search_row'>
+  <view class='search_kuang'>
+    <text class='iconfont icon-sousuo'></text>
+    <input class="search_name" bindconfirm="bindtap" focus="{{inputShowed}}" bindfocus="bindfocus" placeholder="输入公司/标签" bindblur='bindblur' value="{{inputValue}}" />
+  </view>
+  <view class='search_go' bindtap="bindtap" data-tags='{{input}}'>搜索</view>
+</view>
+
+<view class='theme' wx:for="{{activity}}" wx:key="{{item.id}}" data-id='{{item.id}}' bindtap='bindtap'>
+  <view class='content'>
+    <view class='content_left'>
+      <view class='box_img'>
+        <image mode='' src='{{item.img}}' />
+      </view>
+    </view>
+    <view class='float-r'>
+    <view class=''>
+      <view class='text_333 tit'>{{item.name}}</view>
+      <view class='present'>{{item.types}}|{{item.size}}</view>
+      <view class='present'>{{item.work}}</view>
+    </view>
+    <view class='content_right'>
+      <text>招聘职位：<text class='text_color_red'>{{item.numbers}}</text>个</text>
+    </view>
+    </view>
+
+    <view class='clear_float'></view>
+  </view>
+</view>

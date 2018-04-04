@@ -1,0 +1,32 @@
+/* pages/My/EducationalBackground/EducationalBackground.wxss */
+page{
+  background-color:#EBF0F3;
+}
+
+/* 列表 */
+.list{
+  padding:10px;
+  background-color:#fff;
+  font-size:14px;
+  margin-bottom:10px;
+}
+.list .time,.list .department{
+  color:#999;
+}
+.list .company{
+  margin:5px 0;
+}
+
+
+.save-btn {
+    width: 70%;
+    height: 80rpx;
+    margin: 0 auto;
+    font-size: 32rpx;
+    text-align: center;
+    line-height: 80rpx;
+    background-color: #EE7700;
+    border-radius:60px;
+    color: #fff;
+    margin-top:15px;
+}

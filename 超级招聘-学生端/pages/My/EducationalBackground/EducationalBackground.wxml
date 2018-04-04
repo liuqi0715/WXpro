@@ -1,0 +1,13 @@
+<!--pages/My/EducationalBackground/EducationalBackground.wxml-->
+<navigator url="../AddEducation/AddEducation?id={{item.id}}" class="list flex_acjb text_333" hover-class='none' wx:for="{{arr}}" wx:key="key">
+        <view class="text">
+          <view class="time">{{item.time}}</view>
+          <view class="company">{{item.company}}</view>
+          <view class="department">{{item.department}}</view>
+        </view>
+        <view class="iconfont icon-you"></view>
+</navigator>
+
+
+
+ <navigator url="../AddEducation/AddEducation" class="save-btn">+添加更多教育背景</navigator>
