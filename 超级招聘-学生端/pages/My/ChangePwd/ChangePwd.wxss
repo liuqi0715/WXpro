@@ -1,0 +1,13 @@
+/* pages/My/ChangePwd/ChangePwd.wxss */
+page{
+  background-color: #EEF3FA;
+}
+.bg_white{
+  background-color: white;
+  padding: 0px 20rpx 0px 20rpx; 
+}
+.content{
+  padding: 15px 0px;
+  font-size: 15px;
+  color: #333333;
+}

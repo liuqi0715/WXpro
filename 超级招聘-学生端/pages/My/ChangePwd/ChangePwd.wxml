@@ -1,0 +1,7 @@
+<!--pages/My/ChangePwd/ChangePwd.wxml-->
+<view class='bg_white'>
+  <navigator url='../../ModifyThePassword/ModifyThePassword' class='flex_acjb content'>
+    <text>修改密码</text>
+    <text class='iconfont icon-you'></text>
+  </navigator>
+</view>
