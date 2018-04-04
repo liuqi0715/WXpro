@@ -1,0 +1,107 @@
+<!--pages/My/BroHistory/BroHistory.wxml-->
+<!-- <text>pages/My/BroHistory/BroHistory.wxml</text> -->
+<view class='bro_day'>今天</view>
+<view>
+<view class='job_post_his'>
+  <navigator url='../../Index/JobDetails/JobDetails?id={{item.id}}' class='work_post_his'>
+    <image class='work_logo_his' mode='widthFix' src='../../../img/test.png'></image>
+    <text class='work_name_his'>产品助理</text>
+    <text class='work_pay_his'>¥5000-8000</text>
+    <text class='firm_name_his'>保利科技</text>
+    <text class='area_edu_exp_his'>
+      <text class='aee_li_his'>朝阳<text>|</text></text>
+      <text class='aee_li_his'>大专<text>|</text></text>
+      <text class='aee_li_his'>经验不限</text>
+    </text>
+    <view class='qiye_biaoqian__his'>
+      <text>上市公司</text>
+      <text>晋升超快</text>
+       <text>快速提升自己</text> 
+      <text>带薪休假</text>
+    </view>
+    <view class='mianshi_time_his'>面试时间:
+      <text class='mianshi_time_color_his'>2月27日(周二)10:00-16:00</text>
+    </view>
+    <view class='loulan_time'>浏览日期：<text>2018.02.22</text></view>
+  </navigator>
+</view>
+
+</view>
+<view>
+<view class='job_post_his'>
+  <navigator url='../../Index/JobDetails/JobDetails?id={{item.id}}' class='work_post_his'>
+    <image class='work_logo_his' mode='widthFix' src='../../../img/test1.png'></image>
+    <text class='work_name_his'>产品助理</text>
+    <text class='work_pay_his'>¥5000-8000</text>
+    <text class='firm_name_his'>保利科技</text>
+    <text class='area_edu_exp_his'>
+      <text class='aee_li_his'>朝阳<text>|</text></text>
+      <text class='aee_li_his'>大专<text>|</text></text>
+      <text class='aee_li_his'>经验不限</text>
+    </text>
+    <view class='qiye_biaoqian__his'>
+      <text>上市公司</text>
+      <text>晋升超快</text>
+       <text>快速提升自己</text> 
+      <text>带薪休假</text>
+    </view>
+    <view class='mianshi_time_his'>面试时间:
+      <text class='mianshi_time_color_his'>2月27日(周二)10:00-16:00</text>
+    </view>
+    <view class='loulan_time'>浏览日期：<text>2018.02.22</text></view>
+  </navigator>
+</view>
+</view>
+<view class='bro_day'>2018-02-21</view>
+<view>
+<view class='job_post_his'>
+  <navigator url='../../Index/JobDetails/JobDetails?id={{item.id}}' class='work_post_his'>
+    <image class='work_logo_his' mode='widthFix' src='../../../img/test.png'></image>
+    <text class='work_name_his'>产品助理</text>
+    <text class='work_pay_his'>¥5000-8000</text>
+    <text class='firm_name_his'>保利科技</text>
+    <text class='area_edu_exp_his'>
+      <text class='aee_li_his'>朝阳<text>|</text></text>
+      <text class='aee_li_his'>大专<text>|</text></text>
+      <text class='aee_li_his'>经验不限</text>
+    </text>
+    <view class='qiye_biaoqian__his'>
+      <text>上市公司</text>
+      <text>晋升超快</text>
+       <text>快速提升自己</text> 
+      <text>带薪休假</text>
+    </view>
+    <view class='mianshi_time_his'>面试时间:
+      <text class='mianshi_time_color_his'>2月27日(周二)10:00-16:00</text>
+    </view>
+    <view class='loulan_time'>浏览日期：<text>2018.02.22</text></view>
+  </navigator>
+</view>
+
+</view>
+<view>
+<view class='job_post_his'>
+  <navigator url='../../Index/JobDetails/JobDetails?id={{item.id}}' class='work_post_his'>
+    <image class='work_logo_his' mode='widthFix' src='../../../img/test1.png'></image>
+    <text class='work_name_his'>产品助理</text>
+    <text class='work_pay_his'>¥5000-8000</text>
+    <text class='firm_name_his'>保利科技</text>
+    <text class='area_edu_exp_his'>
+      <text class='aee_li_his'>朝阳<text>|</text></text>
+      <text class='aee_li_his'>大专<text>|</text></text>
+      <text class='aee_li_his'>经验不限</text>
+    </text>
+    <view class='qiye_biaoqian__his'>
+      <text>上市公司</text>
+      <text>晋升超快</text>
+       <text>快速提升自己</text> 
+      <text>带薪休假</text>
+    </view>
+    <view class='mianshi_time_his'>面试时间:
+      <text class='mianshi_time_color_his'>2月27日(周二)10:00-16:00</text>
+    </view>
+    <view class='loulan_time'>浏览日期：<text>2018.02.22</text></view>
+  </navigator>
+</view>
+</view>
+<view class='clear_his'>清除历史记录</view>
