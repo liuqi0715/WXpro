@@ -1,0 +1,115 @@
+/* pages/My/DeliveryRecords/DeliveryRecords.wxss */
+page{
+  background: #EBEFF2;
+}
+/*tab切换*/
+.swiper-tab{  
+  width: 100%;  
+  text-align: center;  
+  display: flex;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}  
+.swiper-tab-list{ 
+  font-size: 26rpx;
+  flex: 1;
+  color: #666;
+  line-height: 100rpx;
+}  
+.active { 
+  /* color: #ff7300; */
+  position: relative;
+}
+.active::before { 
+  content: "";
+  width: 100rpx;
+  height: 3rpx;
+  left: 40%;
+  bottom: 0;
+  margin-left: -30rpx;
+  position: absolute;
+  background-color: #ff7300;
+} 
+.distributor {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: #fff;
+  margin-bottom: 10px;
+}
+.swiper-bor {
+  width: 240rpx;
+  height: 240rpx;
+  border: 1px solid #eee;
+  margin-top: 10rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+.swiper-box-img {
+  padding: 20rpx;
+  height: 160rpx;
+}
+.swiper-box-img image {
+  max-width: 200rpx;
+  max-height: 100rpx;
+}
+/*tab切换*/
+.bgfff {
+    /* background-color: #fff; */
+}
+.mt10 {
+    margin-top: 20rpx;
+}
+.mb10 {
+    margin-bottom: 20rpx;
+}
+.avatar{
+  width: 100rpx;
+}
+.avatar image{
+  width: 100rpx;
+  border-radius: 5px;  
+}
+.main{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-left: 10px;
+}
+.main,.main-left{
+  flex: 1;
+}
+.distributor>view{
+  width: 100%;
+}
+.tit{
+  font-size: 35rpx;
+  color: #333;
+}
+.name{
+  font-size: 30rpx;
+}
+.salary{
+  color: red;
+  font-size: 28rpx;
+}
+.state text{
+  display: block;
+  padding: 1px 10rpx;
+  border-radius: 3px;
+  font-size: 28rpx;
+}
+.state .bg_color{
+  background: #F99E43!important;
+}
+.date{
+  font-size: 28rpx;
+  color: #999;
+}
+.hrll{
+  display: block;
+  padding: 3px 8px;
+  background: #08B0E7;
+  color: #fff;
+  border-radius: 5px;
+}

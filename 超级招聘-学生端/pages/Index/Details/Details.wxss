@@ -1,0 +1,346 @@
+/* pages/Index/Details/Details.wxss */
+
+/* page{
+   background: #eee; 
+} */
+@import "../Index/Index.wxss";
+/* 修改 */
+
+.gongs_name {
+  font-size: 28rpx;
+  margin: 0;
+  color: #666;
+}
+.details_top {
+  background: white;
+}
+
+.work_job {
+  padding: 10px;
+}
+
+/* 公司logo */
+
+.work_logo {
+  height: 50px;
+  width: 50px;
+  float: left; 
+  /* padding: 5px; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* 公司名字 */
+
+.work_name {
+  color: black;
+}
+
+/* 公司性质,人数 */
+
+.area_edu_exp {
+  /* margin: 10px; */
+  font-size: 30rpx;
+  left: 10px;
+}
+
+/* 公司行业 */
+
+.firm_name {
+  font-size: 30rpx;
+  color: #999;
+}
+
+/* 公司网址 */
+
+.site_url {
+  margin: 0px 10px;
+  font-size: 30rpx;
+  padding: 15px 0px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+/* 公司地址 */
+
+.job_dizhi {
+  margin: 0px 10px;
+  font-size: 30rpx;
+  padding: 15px 0px;
+}
+
+/*定位图标  */
+
+.job_dizhi .icon-dingwei {
+  color: red;
+  float: right;
+  margin-right: 5px;
+}
+
+/* 企业详情 */
+
+.qiye_details {
+  background: white;
+}
+
+.qiye_zhiwei {
+  padding-bottom: 14px;
+  border-bottom: 2px solid #ed7701;
+}
+
+.xiangqin_top {
+  margin: 10px 10px 0px 10px;
+  padding: 15px 0px;
+  text-align: center;
+  color: black;
+  border-bottom: 1px solid #eee;
+}
+
+.xiangqin_top text:nth-child(2) {
+  margin: 0 40px;
+  color: #eee;
+}
+
+/* 企业简介 */
+
+.qiye_intro {
+  padding: 15px 10px;
+  background: white;
+}
+
+.icon-qiyeguanli {
+  font-size: 40rpx;
+  color: salmon;
+  margin-right: 10px;
+}
+
+.little_title {
+  font-size: 40rpx;
+  color: black;
+}
+
+.intro_detail {
+  font-size: 25rpx;
+}
+
+.icon-xia {
+  color: red;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* 内容控制字符串 */
+
+.intro_detail {
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  font-size: 35rpx;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-height: 1.8;
+}
+
+.all_detail {
+  font-size: 35rpx;
+  line-height: 1.8;
+}
+
+.icon_shang {
+  transform: rotate(-180deg);
+  transform-origin: 50%;
+}
+
+/* 发展历程 */
+
+.icon-huiyuanfazhanqushi {
+  font-size: 50rpx;
+  color: salmon;
+  margin-right: 10px;
+  margin-top: 20rpx;
+}
+
+.licheng_title {
+  color: black;
+  font-size: 30rpx;
+}
+
+.qiye_undergo {
+  padding: 10px 10px;
+  margin-top: 10px;
+  background: white;
+}
+
+.qiye_fazhan {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.qiye_licheng {
+  line-height: 2;
+}
+
+.licheng_details {
+  font-size: 28rpx;
+}
+
+.icon-xiala {
+  text-align: center;
+}
+
+.icon_shangla {
+  transform: rotate(-180deg);
+  transform-origin: 50%;
+  text-align: center;
+}
+
+/* 历程默认隐藏 */
+
+.details_yc {
+  display: none;
+}
+
+/* 面试评价 */
+
+.ms_rate {
+  /* padding: 15px 0 0 0;
+  margin-top: 10px;
+  background: white;
+  margin-bottom: 40px; */
+  padding: 15px 10px;
+  margin-top: 10px;
+  background: white;
+}
+
+.ms_title {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.ms_content {
+  border-bottom: 1px solid #eee;
+}
+
+/* 面试人头像 */
+
+.ms_logo {
+  padding: 15px 5px;
+  font-size: 30rpx;
+}
+
+.ms_logo image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  float: left;
+}
+
+/* 名字 */
+
+.ms_name {
+  font-size: 35rpx;
+  color: black;
+}
+
+.ms_zhiwei {
+  margin-left: 20px;
+  font-size: 25rpx;
+}
+
+.ms_time {
+  float: right;
+  font-size: 25rpx;
+  line-height: 25px;
+}
+
+.ms_details {
+  font-size: 30rpx;
+  margin-top: 10px;
+  margin-left: 40px;
+  line-height: 40rpx;
+}
+
+.ms_jiazai {
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
+
+.jiazai_shangla {
+  text-align: center;
+  padding: 10px 0 10px 0;
+  transform: rotate(-180deg);
+}
+
+/* 招聘職位 */
+
+.area_edu_exq .aee_li text {
+  color: #3c3c3c;
+  margin: 0 5px;
+}
+
+.mianshi_time {
+  font-size: 30rpx;
+  margin: 5px 5px;
+  /* border-top: 1px solid #eee; */
+  padding: 5px 0 0;
+}
+
+.navigator {
+  margin-bottom: 10px;
+}
+
+.area_edu_exq {
+  font-size: 25rpx;
+  color: #3c3c3c;
+  margin-left: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.work_post {
+  padding: 10px;
+}
+.qiye_biaoqian_ text{
+  padding: 3px 8px;
+  color: #666;
+}
+/* 图标 */
+.icon-qiyeguanli::before{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAACjklEQVRYhe2WTWxMURTHf8SCjY/4XEhZWKiFj0R8bKQqIbGwkUiQCPGRyGjamrnnCJqIrVgg7NjYCLYsSDTEhkhYSauJpoi203sOaxHPwns1xlAz03bSxD/5L9555777e+eee9+D/xpDwwVWm/DAhHdV+r0rL0zZUzfEhxzzTXjnymcT7lfpeyb0uPBl+CRr6gIpnmSdK0kM5GoZH4VmVxIXjtUHEljrSmLCoZpA8qx0JTHl6HiBHK5lvOVZ5UpigSPjCjJUYFEUtsUCrbFA62AHywEGjjNvRNiaxS3PqgkFcUFdSTKbchcgBnKlcVdewc8eiYED4woy2MbC7K1jgVZXmgD6O5hbWpEoNENaEeGrC29NeFbRyvXhdhZXBVKtxgRRnqeVfdjdwoyJBRljaUy5ns6xdMJB/tasJlxyJfmYZ9mkgXS3MKOYZ4src7IcF66kDd70zyDFwNoonDGhKwbOWmB7NmEMnDahy4Su7PuS7ZoMZPR5JRWqCSQKJ37ZvsINgBg46MK30XvCo0ogscBGV5IonKgL5BxMLwaWZC7t9OF2Fmfx/oPMrLQ0VmBzet1eF0i1KgcZ7GC5Kb0e2NlQEID3ncwqzWkYSLmmNogFdrvyosSnAEzZkR7XWfwy/L5rPuZZYMrtEWF9XSAe2GtKryt9Jrwx4TzAiLDLhB5X+tJ7NyqBmLBpvHfNtNTl+iVevjRR2FD+69mQHhk90AJtDQWxNmZb4EL2B9cwkEqaYiCdrEiT9tUC4kqTK8mIsP+PsMJFV5KB48yrmBADORPupCCPXbjqyrV/tnDVhFvp1/hJxfE/cl6nc9x0QSuRPnXFXRlwpejK5xo85nhThlwZcOGTCy9rqfx/Taq+A14DQ0nMdoSpAAAAAElFTkSuQmCC");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.icon-huiyuanfazhanqushi::before{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAADv0lEQVRYhe2WX4jUVRTHPwNtkikEWVFhD1GUgUFY9KBIYPRQ2VphYiDV7jbQ5rB/5nfPpZCVWILU6iWVqKDHHkLCJ/+UmBj00D5UrJshrWHb6M7vnmt/SKy06aH7G36785u/O715YGDm3nO/53PPPXPuhSu2QCsb7nTCc2rYpZYjKkyqMOUtx71ltxoGZiPu/d8A4oj1Khzwlj+9pdLC57i3PHv0Ia7qDoBwvwqfVQMIF1U4qMJONWwqF1lbLrLWRfSqZdwL+71wPvFX4Ss1PLIgCDX0qXDBWypq+VWF7bMj3N4C/C0qDKtwpgpkGOsUYiC1qwOdnLuOslyFj6o6lvH2BIQXksXOsKNdgBo9w1BVT3ilpUXlUe5Tyx8hEzsXCpGYE7YmMHHE+mb+OW85FtL4abcgElPhvVDw0+VBltR19IZHg+N5LXJPt0FKRZappRSOvNCI+HA4ku3dhqjGMPSFGCdPbOTqGofyCHeEHnHBW27rZnBvWJ18L+VZ7IUfQ+Guq3F2hucD6cFGoir0e8PmViHUMOaFS2p5O8lAUiuZmVfhzUD5RoOdbfaWy6H6X2oKIfSnetG+UwUWAThhSxg7XLvIciT8W56pCyH8lb5P1PJaPQgnbPCWv5Ms/zTCNclcXGRVGJ/KAjkRAqypETUUElFvOarCvhTQ3ok8PfOgV6vl9zB/7PQw183RK3J3mDudlcapLJB0q/eWb2de5voA/mHqIvzkXMS1AN6yUoWfkx2fLXBDzcYagYRruxILT4ShnBMGvfBPCPaNjrJ8HvxbqWM65C1rvOWH8LsUC3fVBOK/7h18vssC2T3v3HNq2BV29kU8zM1Zos7waipjl5OG6CIezPIPWX46ObasyYEgsn/eeF+pyLJ6osFnkxcuBujfmr0/vPBOAHm9dtKy0guXvOWXcxE3NhLKMic8pZZSsx4zkacnVY+PZfnkVPgyPGKG2gUBmB3ipqbAEb0hc2eSAq+x0LAqaplxI9zaCUwjK+VZrMLJpvfZRJ4eb/k6OH7cbRBn2BG0zyZtoL6zsC6pfhWGuwYR0RtqsKJCf2uLDNtST7utC4YQNiSvPm/Z29ZitYynXuDv1usjjaw8yJJwHEmGP2hXA5jbrNQyo4aBWFjabN2pAotcxJOp+6vihT1AriMQqKb1+5TgtArvO2GLK/KAE1Y4YUVcZJUaNnphjwqTczZgebFjgLTFwlJnKKQDNP0I02oYa6W3tG0TeXpcxMPOsE0th1SY9MJ0yNKUFz5Xy3hseLxus7piLdq/CqjoHyaxlPMAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.pingjia{
+  font-size: 50rpx;
+  color: salmon;
+  margin-right: 10px;
+  margin-top: 20rpx;
+}
+.pingjia::before{
+  content: '';
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAD4ElEQVRYhd2Xf4hVRRTHP6akppRZVGT2g4qtSGqpFBLC/ihDCqV4RViwEC20urTvx5yTQbVIkCAZRUFSJhWFSPVPBVJ/KBgSYm1BIaG4yNa6+949Jy10tdpe/8y1u49d7nN9GXVg/pl7zsxnvmfmzhn4P9jBJzjflXdNeGOowqx/BaK/hzku7HClHtsng52cc0Yh9nUz3YRtrtRNOerCcVfqJmzZWmDqGQNJhHVRhROmLLXAA66Mxj5p2UQ1oc0Cd3tgcU24dAxEhUUnJxVC2u/KC1GVY9XAtWNiiszzwGIL3GNlbmgKYvhJLjbhUJp7U46YsMuUDR5YfDIlwq7tS5iWxg1VmGXK3gj4TlLmNhNeNOELU45k9pIPVbgqFySp8EgmaPwmHK+WaG+M9cCyTIombInQlQviyqtRiY+qJdoTYUUirDHly4xKmyeKN+GzzKR7THgmEe6vlmi3wOvpps4FMWW3K/WasHIctZa78JoJl00UP1ziJlfetkABmNIAeVdUtC8XxJWDrtSrZe7IdT5Fq5W5JSq1L9fZhOEo/+2tBolq1V04kOvswoGYmjtbDZIIC+Mif8gHUXZG58dbDVKrcF+6iXOdTXgpOr/XahBTNsRT836ucxLoSOXrhbNaCeLK167Uk0B3rnNNaIuX2O814dZWQdSENhOOuTKaCAubCjJhV0zPK60CMWFtTMt3Td/QLnTGY2bVwCWnC9HfwxwTfoqLe6rpwGoXs9MfmwkbTxfEAusjRDJY5sJTDS7E4FETHjsNiIIrJ6LCnZMbRNkUB/jTAw+fanwtcK8pI1HZDycFAWDdnJv+4KIyzw1VuCgvbqDIXBdCWkK6sufHVVwwaZB0UBM+zZQAgyb0emBZtcg1VmK+lZg/HLjalKVJ4GlX+jO1y47GKm/StrXAVAs864I1Fkim/BrbSPabCb8kwrr+DmZMemJXzqOhloj9l7vwvCm7XfhtnOpr1IU+C6xvrFtT6+9hTlMQJmw0ZciVb0z5IBHWVAM3N/olZa6zQMGUo+mJcGVBb8O14BVuNKFsylYXvjJh2IS38tUQ+iaoUz9OKizK+u7rZroLP7tSP9TDlWPGURaYsMWFP8YZ69tckKTIPFMeTAKrojp7Mxt1xITedNUDRea6ctiVevaZYEI57Y8T7zdlcyKstsBDTVXxjfZ9gbMTYcWY4ll4E5gS376HY2V+Pfx91af3SiI82tKn6ECRmSa8nHkSrN6+hGknFSkxvyaszKi3qemNORlzRVw4kFRY3t/BjPT3PVjmilqFJS7sN2HtPwaQtYEiMyE+xpXPXdlZ7WJ29tt/1v4CBILpSQds1jUAAAAASUVORK5CYII=");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+}

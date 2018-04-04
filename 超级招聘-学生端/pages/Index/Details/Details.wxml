@@ -1,0 +1,149 @@
+<!--pages/Index/Details/Details.wxml-->
+<!-- <text>pages/Index/Details/Details.wxml</text> -->
+<view class='details_top'>
+<view class='work_top'>
+        <view class='logo_img'>
+          <image class='work_logo' mode='widthFix' src='../../../img/test.png'></image>
+        </view>
+        <view class='top_right'>
+          <view class='top_right_left'>
+            <view class='work_name_'>产品助理</view>
+            <view class='gongs_name'>保利科技</view>
+            <view class='gongs_fuli'>
+              <text class='aee_li'>朝阳<text>|</text></text>
+              <text class='aee_li'>大专<text>|</text></text>
+              <text class='aee_li'>经验不限</text>
+            </view>
+          </view>
+          <view class='top_right_right'>     
+          <text> ¥5000-8000</text>
+          </view>
+        </view>
+      </view>
+  <view class='site_url'>
+    网址：
+    <text>www.baidu.com.cn</text>
+  </view>
+  <view class='job_dizhi' bindtap='map'>
+    北京朝阳区大望路91号金地中心B座1008
+    <text class='iconfont icon-dingwei'></text>
+  </view>
+</view>
+<!--详情  -->
+<view class='qiye_details'>
+  <view class='xiangqin_top'>
+    <text class="left_details {{currentTab==0 ? 'qiye_zhiwei' : ''}}" data-current="0" bindtap="swichNav">企业详情</text>
+    <text>|</text>
+    <text class="ritht_details {{currentTab==1 ? 'qiye_zhiwei' : ''}}" data-current="1" bindtap="swichNav">招聘职位</text>
+  </view>
+</view>
+<!--企業詳情  -->
+<view class="qiye_left" hidden="{{!isShow}}">
+  <view class='qiye_intro'>
+    <text class='iconfont icon-qiyeguanli'></text>
+    <text class='little_title'>企业简介</text>
+    <view class="{{isChecked?'intro_detail':'all_detail'}}">也许一个人最好的样子就是静一点,哪怕一个人生活,穿越一个又一个城市,走过一条又一条街道,仰望一片又一片天空,见证一场又一场离别,于是终于可以坦然的说,我终于不那么执着.也许一个人最好的样子就是静一点,哪怕一个人生活,穿越一个又一个城市,走过一条又一条街道,仰望一片又一片天空,见证一场又一场离别,于是终于可以坦然的说,我终于不那么执。</view>
+    <view bindtap='detailMore' data-type="0" class="{{isChecked?'icon_xia':'icon_shang'}}">
+      <view class='iconfont icon-xia'></view>
+    </view>
+  </view>
+  <view class='qiye_undergo'>
+    <view>
+    </view>
+    <view class='qiye_fazhan'>
+      <text class='iconfont icon-huiyuanfazhanqushi'></text>
+      <text class='little_title'>发展历程</text>
+    </view>
+    <view class='qiye_licheng'>
+      <view class='licheng_title'>2007.08 汇丰平台上线</view>
+      <view bindtap='detailMore' class="{{isFazhan?'details_yc':''}}">
+        <view class='licheng_details'>8.1日.汇丰公司举行宜人贷上线</view>
+      </view>
+      <view bindtap='detailMore' data-type="1" class=" {{isFazhan? 'icon_xiala': 'icon_shangla'}} ">
+        <view class='iconfont icon-xiala'></view>
+      </view>
+    </view>
+    <view class='qiye_licheng'>
+      <view class='licheng_title'>2007.08 宜人贷位居金融科技第一</view>
+      <view bindtap='detailMore' class="{{isFazhanTwo?'details_yc':''}}">
+        <view class='licheng_details'>8.1日.汇丰公司举行宜人贷上线8.1日.汇丰公司举行宜人贷上线8.1日.汇丰公司举行宜人贷上线8.1日.汇丰公司举行宜人贷上线8.1日.汇丰公司举行宜人贷上线</view>
+      </view>
+      <view bindtap='detailMore' data-type="2" class=" {{isFazhanTwo? 'icon_xiala': 'icon_shangla'}} ">
+        <view class='iconfont icon-xiala'></view>
+      </view>
+    </view>
+  </view>
+  <view class='ms_rate'>
+    <view class='ms_title'>
+      <text class='iconfont pingjia'></text>
+      <text class='little_title'>面试评价<text>(282)</text></text>
+    </view>
+    <view class='ms_content'>
+      <view class='ms_logo'>
+        <image src='../../../img/test.png'></image>
+        <text class='ms_name'>赵天南</text>
+        <text class='ms_zhiwei'>部门经理</text>
+        <text class='ms_time'>2017-04-10</text>
+        <view class='ms_details'>公司地理位置办公费环境很好,问的问题专业性很强,期待能够加入保利科技</view>
+      </view>
+    </view>
+    <view class='ms_content'>
+      <view class='ms_logo'>
+        <image src='../../../img/test.png'></image>
+        <text class='ms_name'>李晓涛</text>
+        <text class='ms_zhiwei'>部门经理</text>
+        <text class='ms_time'>2017-04-10</text>
+        <view class='ms_details'>公司地理位置办公费环境很好,问的问题专业性很强,期待能够加入保利科技</view>
+      </view>
+    </view>
+    <view class="{{isMsJiazai? 'ms_hide': 'ms_content'}}" bindtap='detailMore' data-type='3'>
+      <view class='ms_logo'>
+        <image src='../../../img/test.png'></image>
+        <text class='ms_name'>黄晓明</text>
+        <text class='ms_zhiwei'>部门经助理</text>
+        <text class='ms_time'>2016-09-26</text>
+        <view class='ms_details'>公司地理位置办公费环境很好,问的问题专业性很强,期待能够加入保利科技</view>
+      </view>
+    </view>
+    <view class="{{isMsJiazai? 'ms_hide': 'ms_content'}}" bindtap='detailMore' data-type="3">
+      <view class='ms_logo'>
+        <image src='../../../img/test.png'></image>
+        <text class='ms_name'>李小龙</text>
+        <text class='ms_zhiwei'>web前端</text>
+        <text class='ms_time'>2017-04-09</text>
+        <view class='ms_details'>公司地理位置办公费环境很好,问的问题专业性很强,期待能够加入保利科技</view>
+      </view>
+    </view>
+    <view class="{{isMsJiazai? 'ms_jiazai': 'jiazai_shangla'}}" bindtap='detailMore' data-type="4">
+      <text class='iconfont icon-xia'></text>
+    </view>
+  </view>
+</view>
+<!-- 招聘職位 -->
+<view class="qiye_right" hidden="{{isShow}}">
+  <view class='job_post'>
+  <!-- list S -->
+    <navigator url='../JobDetails/JobDetails?id={{item.id}}' class='work_post'>
+      <view>
+        <text class='work_name'>产品助理</text>
+        <text class='work_pay'>¥5000-8000</text>
+      </view>
+      <text class='area_edu_exq'>
+      <text class='aee_li'>朝阳<text>|</text></text>
+      <text class='aee_li'>大专<text>|</text></text>
+      <text class='aee_li'>经验不限</text>
+      </text>
+      <view class='qiye_biaoqian_'>
+        <text>上市公司</text>
+        <text>晋升超快</text>
+        <text>快速提升自己</text>
+        <text>带薪休假</text>
+      </view>
+      <view class='mianshi_time'>面试时间:
+        <text class='text_color'>2月27日(周二)10:00-16:00</text>
+      </view>
+    </navigator>
+  <!-- list E -->
+    
+  </view>
+</view>

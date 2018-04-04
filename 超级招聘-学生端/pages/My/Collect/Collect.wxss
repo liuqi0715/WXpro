@@ -1,0 +1,105 @@
+/* pages/My/Collect/Collect.wxss */
+/* 收藏的职位 */
+.job_post_col{
+  display: flex;
+}
+.work_post_col{
+   padding: 10px; 
+   width: 100%;
+   /* margin-bottom: 10px; */
+   background: #fff;
+}
+.work_post_col .work_logo_col{
+  height: 50px;
+  width: 50px;
+  float: left; 
+  /* padding: 5px; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+.work_name_col{
+  margin-left: 10px;
+  font-size: 35rpx;
+  color: #333;
+}
+.work_pay_col{
+  color: red;
+   float: right; 
+   margin-right: 5px;
+}
+.firm_name_col{
+  display: flex;
+    justify-content: flex-start;  
+  padding-left: 10px;
+  font-size: 30rpx;
+  color: #333;
+   margin-top: 5px; 
+}
+/* 招募状态 */
+.zhiwei_status_col{
+  background:red;
+  color: white;
+  float: right;
+  font-size: 30rpx;
+  margin-right: 5px;
+  padding: 5rpx 10rpx;
+  border-radius: 10rpx;
+  display: flex;
+}
+page{
+  background: #eee;
+}
+.area_edu_exp_col{
+  font-size: 25rpx;
+  color: #999;
+  margin-left: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.area_edu_exp_col .aee_li_col text{
+  margin: 0 5px;
+}
+.mianshi_time_col{
+  font-size: 30rpx;
+  padding: 15px 0;
+  margin: 0 5px;
+  border-bottom: 1rpx solid lightgrey;
+}
+/* 取消收藏/投递简历 */
+.clear_go_col{
+  display: flex;
+  background: white;
+  padding: 10px 10px 20px 10px ;
+  margin-bottom: 10px;
+}
+.clear_go_col>view{
+  width: 50%;
+  text-align: center;
+}
+.quxiao_col{
+  border: 1px solid #ED7701;
+  padding: 10rpx 20rpx;
+  border-radius: 10px;
+  font-size: 30rpx;
+  color: #ED7701;
+}
+/* 投递 */
+.toudi_col{
+  border: 2px solid #ED7701;
+  padding: 10rpx 20rpx;
+  border-radius: 10px;
+  font-size: 30rpx;
+  color: white;
+  background: #ED7701;
+}
+/* 已投递 */
+.over_col{
+  /* border: 2px solid #ED7701; */
+  padding: 14rpx 42rpx;
+  border-radius: 10px;
+  font-size: 30rpx;
+  color: white;
+  background: #999;
+  
+}
