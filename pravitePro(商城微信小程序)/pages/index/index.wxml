@@ -1,0 +1,59 @@
+<!--index.wxml-->
+<!-- <view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view> -->
+
+<!-- 有了个趣商城首页 -->
+<view>
+    	<!--indicator-dots: 是否显示面板指示点 -->
+  <view class='topInfo' >
+  <image src='../../img/logo.jpg' class='logo'></image>
+    <text wx:for="{{topInfo}}"  wx:key="" bindtap='topClick' data-id='{{index}}' class="{{index==topInfoId ? 'is_selected' : 'default'}}">{{item.item}}</text>
+    <!-- <text wx:else> {{item}}</text> -->
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}"  
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}" wx:key="">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" width="355" height="150"/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class='discount'>限时特惠</view>
+<view class="countFlower">
+  <view class='contain'>
+    <view wx:for="{{countFlower}}" wx:key="" class='countView'> <image src='{{item}}' class='countF'></image> </view>
+  </view>
+</view>
+
+<view class='nature'>Nature自然系列</view>
+<view class='natureTips'> 每周一花送给自己的小幸福</view>
+<view class='viewContain' >
+    <image src='{{item.url}}' data-id='{{item.id}}' wx:for="{{natureFlowers}}" class='natureImg' bindtap='buyFlowers'></image>
+</view>
+<!-- 商品搜索框 -->
+<!-- <view class="search">  
+    <view class="df search_arr">  
+      <icon class="searchcion" size='15' type='search'></icon>  
+      <input class=""  placeholder="请输入关键字" value="{{searchValue}}"/>  
+    </view>  
+</view>  -->
+
+
+</view>
+
+
+
+
+

@@ -1,0 +1,215 @@
+/* pages/Index/Index/Index.wxss */
+
+view, text, image {
+  box-sizing: border-box;
+}
+
+.page_top {
+  background-color: #ed7701;
+  color: white;
+  font-size: 30rpx;
+  padding: 5px 15px 40px 15px;
+    height: 60px;
+}
+
+/* 颜色 */
+
+.text_333 {
+  color: #333;
+}
+
+.text_333 {
+  color: #666;
+}
+
+.text_ed7 {
+  color: #ed7701;
+}
+.icon-dingwei2{
+  display: inline-block;
+   padding: 10px 5px; 
+
+}
+.page_top .icon-sousuo {
+  float: right; 
+   padding: 3px 15px;
+   border-radius: 20px;
+   border: 1px solid white;
+   margin-top: 10px;
+}
+
+.page_top .icon-sousuo text {
+  margin-left: 5rpx;
+}
+
+.nav_lastLi {
+  border-right: 0;
+}
+
+/* 默认职位 */
+
+.job_post {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.work_post {
+  /* padding: 10px; */
+  width: 100%;
+  /* margin-bottom: 10px; */
+  background: #fff;
+}
+
+.work_post .work_logo {
+  height: 50px;
+  width: 50px;
+  float: left;
+  /* padding: 5px; */
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.work_name {
+  margin-left: 10px;
+  font-size: 33rpx;
+  line-height: 1;
+  color: #333;
+}
+
+.work_pay {
+  color: red;
+  float: right;
+  margin-right: 5px;
+}
+
+.firm_name {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10px;
+  font-size: 28rpx;
+  color: #333;
+  margin-top: 5px;
+}
+
+page {
+  background: #eee;
+}
+
+.area_edu_exp {
+  font-size: 25rpx;
+  color: #999;
+  margin-left: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+
+.area_edu_exp .aee_li text {
+  margin: 0 5px;
+}
+
+.mianshi_time_color {
+  color: red;
+}
+
+.nav_li_tit {
+  width: 22vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.nav_li, .nav {
+  padding: 0;
+}
+
+.box_bg {
+  top: 96px;
+}
+
+.second_box {
+  position: fixed;
+  top: 145px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+/* 更改 */
+
+.work_top {
+  display: flex;
+  padding: 10px;
+}
+
+.logo_img {
+  width: 50px;
+  height: 50px;
+}
+
+.work_logo {
+  height: 100%;
+  width: 100%;
+}
+
+.top_right {
+  display: flex;
+  margin-left: 10px;
+  /* line-height: 33rpx;  */
+  flex: 1;
+}
+
+.work_name_ {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.gongs_name {
+  font-size: 26rpx;
+    margin: -3rpx 0;  
+  color: #666;
+}
+
+.gongs_fuli {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.top_right_left {
+  flex: 1;
+}
+
+.top_right_right>text {
+  font-size: 33rpx;
+  margin-right: 10px;
+  color: red;
+}
+
+.work_post {
+  background-color: white;
+  /* padding:10px; */
+}
+
+.qiye_biaoqian_ {
+  border-bottom: 1px solid #eee;
+  padding: 0 10px 10px;
+}
+
+.qiye_biaoqian_>text {
+  border: 1px solid #eee;
+  padding: 3px 5px;
+  color: #666;
+  font-size: 25rpx;
+  margin: 0px 10px 10px 0px;
+}
+
+.mianshi_time {
+  font-size: 30rpx;
+  margin: 10px;
+}
+
+.mianshi_time_color {
+  color: red;
+}

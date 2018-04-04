@@ -1,0 +1,25 @@
+
+.developing{
+  text-align:center;
+  font-size: 25rpx;
+  margin-top: 20rpx;
+}
+
+.developed{
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 35%;
+  margin-left: 27%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
