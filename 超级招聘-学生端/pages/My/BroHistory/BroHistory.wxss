@@ -1,0 +1,95 @@
+/* pages/My/BroHistory/BroHistory.wxss */
+page{
+    background: #ebf0f3;
+}
+
+.bro_day{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 35rpx;
+  color: #666;
+}
+/* 企业信息 */
+.job_post_his{
+  display: flex;
+  margin-bottom: 10px; 
+}
+.work_post_his{
+   padding: 5px; 
+   width: 100%;
+   /* margin-bottom: 10px; */
+   background: #fff;
+}
+.work_post_his .work_logo_his{
+  height: 60%;
+  width: 20%;
+  float: left; 
+  padding: 5px;
+}
+.work_name_his{
+  margin-left: 10px;
+  font-size: 35rpx;
+  color: #333;
+}
+.work_pay_his{
+  color: red;
+   float: right; 
+   margin-right: 5px;
+}
+.firm_name_his{
+  display: flex;
+    justify-content: flex-start;  
+  padding-left: 10px;
+  font-size: 30rpx;
+  color: #333;
+   margin-top: 5px; 
+}
+
+.area_edu_exp_his{
+  font-size: 25rpx;
+  color: #999;
+  margin-left: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.area_edu_exp_his .aee_li text_his{
+  margin: 0 5px;
+}
+.qiye_biaoqian__his {
+  padding: 10px;
+}
+
+.qiye_biaoqian__his>text {
+  border: 1px solid #eee;
+  padding: 2px 5px;
+  /* color: #ed7701; */
+  font-size: 25rpx;
+  margin: 0px 10px 10px 0px;
+}
+.mianshi_time_his{
+  font-size: 30rpx;
+  margin: 0px 5px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+.mianshi_time_color_his{
+  color: #ee7700 !important;
+}
+/* 浏览日期 */
+.loulan_time{
+  float: right;
+  font-size: 30rpx;
+  padding: 5px;
+}
+/* 清除历史记录 */
+.clear_his{
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 35rpx;
+  color: #666;
+  margin-bottom: 20px;
+  background: white;
+}

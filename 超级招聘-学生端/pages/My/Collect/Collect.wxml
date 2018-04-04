@@ -1,0 +1,68 @@
+<!--pages/My/Collect/Collect.wxml-->
+<!-- <text>pages/My/Collect/Collect.wxml</text> -->
+<view>
+  <view class='job_post_col'>
+    <navigator url='../../Index/JobDetails/JobDetails?id={{item.id}}' class='work_post_col'>
+      <!-- <view class='display_flex'>  -->
+      <image class='work_logo_col' mode='' src='../../../img/test.png'></image>
+      <text class='work_name_col'>产品助理</text>
+      <text class='work_pay_col'>¥5000-8000</text>
+      <text class='firm_name_col'>保利科技</text>
+      <view class='zhiwei_status_col'>招募中</view>
+      <!-- <text>已暂停</text> -->
+      <text class='area_edu_exp_col'>
+      <text class='aee_li_col'>朝阳<text>|</text></text>
+      <text class='aee_li_col'>大专<text>|</text></text>
+      <text class='aee_li_col'>经验不限</text>
+      </text>
+      <!-- </view>  -->
+      <view class='mianshi_time_col'>面试时间:
+        <text>2月27日(周二)10:00-16:00</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='clear_go_col'>
+    <view>
+      <text class='quxiao_col'>取消收藏</text>
+    </view>
+    <view>
+      <text bindtap='jobGo' class="{{TodiResume? 'toudi_col':'over_col'}}">{{TodiResume? '投递简历':'已投递'}}</text>
+    </view>
+    <!-- <view>
+      <text class='over_col'>投递投递</text>
+    </view> -->
+  </view>
+</view>
+<view>
+  <view class='job_post_col'>
+    <navigator url='../../Index/JobDetails/JobDetails?id={{item.id}}' class='work_post_col'>
+      <!-- <view class='display_flex'>  -->
+      <image class='work_logo_col' mode='' src='../../../img/test.png'></image>
+      <text class='work_name_col'>产品助理</text>
+      <text class='work_pay_col'>¥5000-8000</text>
+      <text class='firm_name_col'>保利科技</text>
+      <view class='zhiwei_status_col'>招募中</view>
+      <!-- <text>已暂停</text> -->
+      <text class='area_edu_exp_col'>
+      <text class='aee_li_col'>朝阳<text>|</text></text>
+      <text class='aee_li_col'>大专<text>|</text></text>
+      <text class='aee_li_col'>经验不限</text>
+      </text>
+      <!-- </view>  -->
+      <view class='mianshi_time_col'>面试时间:
+        <text>2月27日(周二)10:00-16:00</text>
+      </view>
+    </navigator>
+  </view>
+  <view class='clear_go_col'>
+    <view>
+      <text class='quxiao_col'>取消收藏</text>
+    </view>
+    <view>
+      <text bindtap='jobGo' class="{{TodiResume? 'toudi_col':'toudi_col'}}">{{TodiResume? '投递简历':'投递简历'}}</text>
+    </view>
+    <!-- <view>
+      <text class='over_col'>投递投递</text>
+    </view> -->
+  </view>
+</view>
