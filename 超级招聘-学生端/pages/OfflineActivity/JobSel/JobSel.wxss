@@ -1,0 +1,152 @@
+/* pages/Index/JobSel/JobSel.wxss */
+
+ .page_top{
+  background-color: #ED7701;
+  color: white;
+  height: 40px;
+  font-size: 30rpx;
+  padding: 5px 15px 40px 15px;
+} 
+.search_row {
+  background: #ed7701;
+  padding: 5px 15px 10px 0px;
+}
+
+.search_kuang {
+  border: 1px solid #ed7701;
+  margin-left: 20rpx;
+  background: white;
+  border-radius: 50rpx;
+  padding: 5px;
+  width: 80%;
+}
+
+.icon-sousuo {
+  float: left;
+  color: #ed7701;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-right: 20rpx;
+}
+
+.search_name {
+  font-size: 30rpx;
+}
+
+.search_go {
+  float: right;
+  position: absolute;
+  right: 20px;
+   top: 10px; 
+  color: white;
+}
+/* 颜色 */
+.text_333{
+  color: #333;
+}
+.text_333{
+  color: #666;
+}
+.text_ed7{
+  color: #ED7701;
+}
+.page_top .icon-sousuo{
+   float: right; 
+   padding: 5px 15px;
+   border-radius: 20px;
+   border: 1px solid white;
+}
+.page_top .icon-sousuo text{
+  margin-left: 5rpx;
+}
+.nav_lastLi{
+  border-right: 0;
+}
+/* 默认职位 */
+.job_post{
+  display: flex;
+  margin-bottom: 10px; 
+}
+.work_post{
+   padding: 5px; 
+   width: 100%;
+   /* margin-bottom: 10px; */
+   background: #fff;
+}
+.work_post .work_logo{
+  height: 50px;
+  width: 50px;
+  float: left; 
+  border-radius: 5px;
+  overflow: hidden;
+}
+.work_name{
+  margin-left: 10px;
+  font-size: 35rpx;
+  color: #333;
+}
+.work_pay{
+  color: red;
+   float: right; 
+   margin-right: 5px;
+}
+.firm_name{
+  display: flex;
+    justify-content: flex-start;  
+  padding-left: 10px;
+  font-size: 30rpx;
+  color: #333;
+   margin-top: 5px; 
+}
+page{
+  background: #eee;
+}
+.area_edu_exp{
+  font-size: 25rpx;
+  color: #999;
+  margin-left: 10px;
+  position: relative;
+  left: 0;
+  top: 0;
+}
+.area_edu_exp .aee_li text{
+  margin: 0 5px;
+}
+.qiye_biaoqian_ {
+  padding: 10px;
+}
+
+.qiye_biaoqian_>text {
+  border: 1px solid #eee;
+  padding: 2px;
+  color: #999;
+  font-size: 25rpx;
+  margin: 0px 10px 10px 0px;
+}
+.mianshi_time{
+  font-size: 30rpx;
+  margin: 10px 5px;
+}
+.mianshi_time_color{
+   color: red; 
+}
+.nav_li_tit{
+  width: 22vw;
+  overflow: hidden;
+  white-space: nowrap;
+  text-align: center;
+}
+
+@import "../../Index/Index/Index.wxss";
+.box_bg {
+  top: 105px;
+}
+.second_box{
+  position: fixed;
+  top: 170px;
+  left: 0;
+  width: 100vw;
+  height: calc(100vh - 50px);
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}

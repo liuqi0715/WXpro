@@ -1,0 +1,202 @@
+<!--pages/Index/JobSel/JobSel.wxml-->
+<!-- <text>pages/Index/JobSel/JobSel.wxml</text> -->
+<!--pages/Index/Index/Index.wxml-->
+<!-- <text>pages/Index/Index/Index.wxml</text> -->
+ <!-- <view class='page_top'>  -->
+  <view class='search_row'>
+  <view class='search_kuang'>
+    <text class='iconfont icon-sousuo'></text>
+    <input class="search_name" focus="{{inputShowed}}" placeholder="输入职位/公司/标签" bindblur='bindblur' value="{{inputValue}}" />
+    <!-- <view class="weui-icon-clear" wx:if="{{inputVal.length > 0}}" bindtap="clearInput">
+      <icon type="clear" size="14"></icon>
+    </view> -->
+  </view>
+  <view class='search_go' bindtap="bindtap" data-tags='{{input}}'>搜索</view>
+</view>
+ <!-- </view>  -->
+<view class='flex_aic nav'>
+  <!--位置区域  -->
+  <view class='nav_li'>
+    <view bindtap='open_box' data-type='0' class="nav_li_tit {{box_weizhi?'text_color':''}}">
+      <text class="{{box_weizhi?'text_ed7':'text_333'}}">{{wz_tit}}</text>
+      <text class="iconfont icon-xiala {{box_weizhi?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_weizhi}}">
+      <view bindtap='open_box' data-type='0' class='box_bg'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <view bindtap='bindtap' data-type='0' data-tit='{{item.title}}' wx:for="{{weizhi_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == weizhi_active?'text_ed7':'text_333'}}">
+          <text>{{item.title}}</text>
+          <icon wx:if="{{item.id == weizhi_active}}" type="success_no_circle" size="15" color="#ED7701" />
+        </view>
+      </view>
+    </view>
+    <!-- box end -->
+  </view>
+  <!-- 企业类型 -->
+  <view class='nav_li'>
+    <view bindtap='open_box' data-type='1' class="nav_li_tit {{box_qiye?'text_color':''}}">
+      <text class="{{box_qiye?'text_ed7':'text_333'}}">{{qy_tit}}</text>
+      <text class="iconfont icon-xiala {{box_qiye?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_qiye}}">
+      <view bindtap='open_box' data-type='1' class='box_bg'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <view bindtap='bindtap' data-type='1' data-tit='{{item.title}}' wx:for="{{qiye_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == qiye_active?'text_ed7':'text_333'}}">
+          <text>{{item.title}}</text>
+          <icon wx:if="{{item.id == qiye_active}}" type="success_no_circle" size="15" color="#ED7701" />
+        </view>
+      </view>
+    </view>
+    <!-- box end -->
+  </view>
+  <!-- 行业类型 -->
+  <view class='nav_li'>
+    <view bindtap='open_box' data-type='2' class="nav_li_tit {{box_hangye?'text_color':''}}">
+      <text class="{{box_hangye?'text_ed7':'text_333'}}">{{hy_tit}}</text>
+      <text class="iconfont icon-xiala {{box_hangye?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_hangye}}">
+      <view bindtap='open_box' data-type='2' class='box_bg'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <view bindtap='bindtap' data-type='2' data-tit='{{item.title}}' wx:for="{{hangye_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == hangye_active?'text_ed7':'text_333'}}">
+          <text>{{item.title}}</text>
+          <icon wx:if="{{item.id == hangye_active}}" type="success_no_circle" size="15" color="#ED7701" />
+        </view>
+      </view>
+    </view>
+    <!-- box end -->
+  </view>
+  <!-- 专业要求 -->
+  <view class='nav_li nav_lastLi'>
+    <view bindtap='open_box' data-type='3' class="nav_li_tit {{box_zhuanye?'text_color':''}}">
+      <text class="{{box_zhuanye?'text_ed7':'text_333'}}">{{zy_tit}}</text>
+      <text class="iconfont icon-xiala {{box_zhuanye?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_zhuanye}}">
+      <view bindtap='open_box' data-type='3' class='box_bg'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <view bindtap='bindtap' data-type='3' data-tit='{{item.title}}' wx:for="{{zhuanye_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == zhuanye_active?'text_ed7':'text_333'}}">
+          <text>{{item.title}}</text>
+          <icon wx:if="{{item.id == zhuanye_active}}" type="success_no_circle" size="15" color="#ED7701" />
+        </view>
+      </view>
+    </view>
+    <!-- box end -->
+  </view>
+
+</view>
+<view class='flex_aic nav'>
+  <!-- 学历要求 -->
+  <view class='nav_li'>
+    <view bindtap='open_box' data-type='4' class="nav_li_tit {{box_xueli?'text_color':''}}">
+      <text class="{{box_xueli?'text_ed7':'text_333'}}">{{xl_tit}}</text>
+      <text class="iconfont icon-xiala {{box_xueli?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_xueli}}">
+      <view bindtap='open_box' data-type='4' class='second_box'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <view bindtap='bindtap' data-type='4' data-tit='{{item.title}}' wx:for="{{xueli_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == xueli_active?'text_ed7':'text_333'}}">
+          <text>{{item.title}}</text>
+          <icon wx:if="{{item.id == xueli_active}}" type="success_no_circle" size="15" color="#ED7701" />
+        </view>
+      </view>
+    </view>
+    <!-- box end -->
+  </view>
+  <!-- 职位名称 -->
+  <view class='nav_li'>
+    <view bindtap='goZhiwei' data-type='5' class="nav_li_tit {{box_zhiwei?'text_color':''}}">
+      <text class="{{box_zhiwei?'text_ed7':'text_333'}}">{{zw_tit}}</text>
+      <text class="iconfont icon-xiala {{box_zhiwei?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <!-- <view class='zhiwu_box' hidden="{{!box_zhiwei}}">
+        <view bindtap='open_box' data-type='5' class='second_box'></view>
+        <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+          <view bindtap='bindtap' data-type='5' wx:for="{{zhiwei_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == zhiwei_active?'text_color':''}}">
+            <text>{{item.title}}</text>
+             <icon wx:if="{{item.id == zhiwei_active}}" type="success_no_circle" size="15" color="#ED7701"/>
+          </view>
+        </view>
+      </view> -->
+    <!-- box end -->
+  </view>
+  <!-- 薪资范围 -->
+  <view class='nav_li'>
+    <view bindtap='open_box' data-type='6' class="nav_li_tit {{box_xinzi?'text_color':''}}">
+      <text class="{{box_xinzi?'text_ed7':'text_333'}}">{{xz_tit}}</text>
+      <text class="iconfont icon-xiala {{box_xinzi?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_xinzi}}">
+      <view bindtap='open_box' data-type='6' class='second_box'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <!-- <text class="{{box_zhiwei?'text_ed7':'text_333'}}">{{xz_tit}}</text> -->
+        <view bindtap='bindtap' data-type='6' data-tit='{{item.title}}' wx:for="{{xinzi_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == xinzi_active?'text_ed7':'text_333'}}">
+          <text>{{item.title}}</text>
+          <icon wx:if="{{item.id == xinzi_active}}" type="success_no_circle" size="15" color="#ED7701" />
+        </view>
+      </view>
+    </view>
+    <!-- box end -->
+  </view>
+  <!-- 智能排序 -->
+  <view class='nav_li nav_lastLi'>
+    <view bindtap='open_box' data-type='7' class="nav_li_tit {{box_zhineng?'text_color':''}}">
+      <text class="{{box_zhineng?'text_ed7':'text_333'}}">{{zn_tit}}</text>
+      <text class="iconfont icon-xiala {{box_zhineng?'text_color':''}}"></text>
+    </view>
+    <!-- box -->
+    <view class='zhiwu_box' hidden="{{!box_zhineng}}">
+      <view bindtap='open_box' data-type='7' class='second_box'></view>
+      <view class='box_list' style="top:{{top}};" animation="{{animationData}}">
+        <!-- <text class="{{box_zhiwei?'text_ed7':'text_333'}}">{{zw_tit}}</text> -->
+        <view bindtap='bindtap' data-type='7' data-tit='{{item.title}}' wx:for="{{zhineng_list}}" data-id='{{item.id}}' wx:key="{{item.id}}" class="box_li {{item.id == zhineng_active?'text_ed7':'text_333'}}">
+          <text>{{item.title}}</text>
+          <icon wx:if="{{item.id == zhineng_active}}" type="success_no_circle" size="15" color="#ED7701" />
+        </view>
+      </view>
+    </view>
+    <!-- box end -->
+  </view>
+</view>
+<!-- 首页默认职位 -->
+<view>
+<view class='job_post'>
+    <navigator url='../../Index/JobDetails/JobDetails?id={{item.id}}' class='work_post'>
+      <view class='work_top'>
+        <view class='logo_img'>
+          <image class='work_logo' mode='widthFix' src='../../../img/test.png'></image>
+        </view>
+        <view class='top_right'>
+          <view class='top_right_left'>
+            <view class='work_name_'>产品助理</view>
+            <view class='gongs_name'>保利科技</view>
+            <view class='gongs_fuli'>
+              <text class='aee_li'>朝阳<text>|</text></text>
+              <text class='aee_li'>大专<text>|</text></text>
+              <text class='aee_li'>经验不限</text>
+            </view>
+          </view>
+          <view class='top_right_right'>     
+          <text> ¥5000-8000</text>
+          </view>
+        </view>
+      </view>
+      <view class='qiye_biaoqian_'>
+        <text>上市公司</text>
+        <text>晋升超快</text>
+        <text>快速提升自己</text>
+        <text>带薪休假</text>
+      </view>
+      <view class='mianshi_time'>面试时间:
+        <text class='mianshi_time_color text_color'>2月27日(周二)10:00-16:00</text>
+      </view>
+    </navigator>
+  </view>
+</view>

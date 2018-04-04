@@ -1,0 +1,44 @@
+<!--pages/login/login.wxml-->
+<view class='head' wx:for="{{title}}" wx:key="{{item.id}}">
+<image mode='' src='{{item.img}}' />
+<navigator class='text_color text_font sign_word' url='../signUp/signUp'>注册</navigator>
+</view>
+<view class='login'>
+  <form bindsubmit="formSubmit">
+    <view class='login_input login_name'>
+      <text class='iconfont icon-yonghu text_color'></text>
+      <input name="nickName" placeholder='请输入用户名'></input>
+    </view>
+    <!-- 密码框 -->
+    <view wx:if="{{isPassWord}}" class='login_input login_password'>
+      <text class='iconfont icon-xiugaimima text_color'></text>
+      <input name="password" password='true' value='{{pwd_val}}' bindblur="bindblur" placeholder='输入密码'></input>
+      <text bindtap='isShow' class='iconfont icon-htmal5icon08'></text>
+    </view>
+    <view wx:if="{{!isPassWord}}" class='login_input login_password'>
+      <text class='iconfont icon-xiugaimima text_color'></text>
+      <input name="password" value='{{pwd_val}}' bindblur="bindblur" placeholder='输入密码'></input>
+      <text bindtap='isShow' class='iconfont icon-htmal5icon09'></text>
+    </view>
+
+    <view class='login_btn'>
+      <button class='bg_color' formType="submit">登录超级招聘</button>
+      <view class='login_reset'>
+        <navigator url='../PhoneLogin/PhoneLogin' class='text_color text_font'>手机号登录</navigator>
+        <navigator url='../RetrievePassword/RetrievePassword' class='text_font'>找回密码</navigator>
+      </view>
+    </view>
+
+  </form>
+</view>
+<!-- 其他登录方式 -->
+<view class='other_sign'>
+  <view class='other_line'></view>
+  <text class='text_font'>其他登录方式</text>
+  <view class='other_line'></view>
+</view>
+<view class='other_sign'>
+  <view class='other_signIn'><text class='iconfont icon-weixin'></text></view>
+  <view class='other_signIn'><text class='iconfont icon-QQ'></text></view>
+  <view class='other_signIn'><text class='iconfont icon-weibo'></text></view>
+</view>
