@@ -1,0 +1,213 @@
+page{
+  background-color: #EEEEEE;
+}
+
+.contain{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 30rpx;
+ 
+}
+.modal{
+  width: 75%;
+  background-color: white;
+  height: auto; 
+  position: fixed;
+  left: 9%;
+  top: 15%;
+  border-radius:5px;
+  padding:30rpx;
+  position: relative；
+}
+.modalTitle{
+  font-size: 25rpx;
+  text-align: center;
+}
+.section{
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.sect{
+  margin-top:20px;
+}
+.getCode,.getCode2{
+  display:block;
+  width:32%;
+  height:56rpx;
+  color:#C3D600;
+  border-radius:56rpx;
+  text-align:center;
+  border:1px solid #C3D600;
+  position:absolute;
+  right:30rpx;
+  top:10rpx;
+  line-height:56rpx;
+
+}
+.getCode2{
+  width: 40%;
+}
+.title{
+  height: 50rpx;
+  line-height:50rpx;
+
+}
+view{
+  height: 80rpx;
+}
+input{
+  height: 100%;
+  text-indent: 16px;
+}
+
+.tel{
+  width: 60%;
+}
+.btn-area{
+  width: 100%;
+  margin: 20rpx auto;
+}
+.btn{
+  background-color: #C3D600;
+  color:white;
+  border-radius:3px;
+  height:70rpx;
+  font-size:29rpx;
+  line-height:70rpx;
+  margin-top:25px;
+}
+.close{
+  width: 25px;
+  height:25px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 25px;
+  color: white;
+  border: 1px solid white;
+  /* margin: 0 auto;
+  margin-bottom: -25%; */
+  position: absolute;
+  bottom:-16%;
+  left:45%;
+}
+.bindTips{
+  height: 25px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #F99355;
+  background-color: #FDFCEC;
+}
+.icon{
+  margin-left:10px;
+  margin-top:4px;
+  float:left;
+  margin-right:6px;
+}
+.more{
+  float:right;
+  width:25px;
+  height:25px;
+  margin-right:10px;
+
+}
+
+.userinfo{
+  width: 100%;
+  height: 120px;
+  background-color: white;
+}
+
+.userinfo-avatar{
+  width:85px;
+  height:85px;
+  border-radius: 50%;
+  float:left;
+  margin-top:15px;
+}
+.userinfo-nickname{
+  line-height: 120px;
+  width: 25%;
+  font-size: 33rpx;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+  margin-left:2%;
+}
+.getMore{ 
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: 10px;
+  vertical-align: middle;
+  margin-top:47px;
+}
+.moreOrders{
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: 10px;
+  margin-top: 7px;
+}
+.orders{
+  height:40px;
+  line-height:40px;
+  text-indent:4%;
+  font-size:27rpx;
+  margin-top:12px;
+  background:white;
+  border-bottom: 1px solid #E5E5E5;
+}
+.needPay,.service,.done{
+width:33%;
+height:100px;
+float:left;
+font-size:25rpx;
+text-align:center;
+
+}
+.orderImg{
+  width:40px;
+  height:40px;
+  margin:10px auto;
+  display:block;
+  color:#6A6A6A;
+}
+
+.orderStatus{
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

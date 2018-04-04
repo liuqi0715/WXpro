@@ -1,0 +1,76 @@
+<!-- 首先对用户手机绑定进行验证 -->
+<view class='contain' wx:if="{{hasNotBinding}}">
+    <view class='modal' wx:if="{{hasNotBinding}}">
+          <view class='modalTitle'>
+              <view class='title'>为了保证您的账号安全</view> 
+              <view class='title'>请绑定您的个人手机号码</view>  
+          </view>
+          <view class="section sect">
+            <input placeholder="请输入手机号" type='number' maxlength="11" class='tel' auto-focus/>
+            <text class='getCode' wx:if="{{getCode}}" bindtap='getCode'>获取验证码</text>
+            <text class='getCode2' wx:if="{{hasGetCode}}">重新发送（{{num}}s）</text> 
+          </view>
+            
+          <view class="section">
+            <input placeholder="请输入验证码" type='' maxlength="8" />
+          </view>
+          <view class="btn-area">
+            <button bindtap="bindButtonTap" class="btn">绑定</button>
+          </view>
+           <view class='close' bindtap='closeBinding'>×</view>
+    </view>
+   
+</view>
+
+<view class='bindTips'> <icon type='warn' class='icon' size='16' color='#F99355'></icon> 您还没有绑定手机号，为了账号安全请立即绑定 <image src='../../img/more.png' class='more' ></image></view>
+
+<!-- 微信用户信息 -->
+
+  <view class="userinfo">
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      <image src='../../img/getMore.png' class='getMore'></image>
+    </block>
+  </view>
+  <view class='orders'>
+      我的订单
+       <image src='../../img/getMore.png' class='moreOrders'></image>
+  </view>
+
+  <view class='orderStatus'>
+        <view class='needPay'>
+        <image  class='orderImg' src='https://misc.reflower.com.cn/images/obligation.svg'></image>
+        代付款
+        </view>
+        <view class='service'>
+          <image class='orderImg' src='https://misc.reflower.com.cn/images/service.svg'></image>
+          服务中
+        </view>
+        <view class='done'>
+            <image class='orderImg' src='https://misc.reflower.com.cn/images/already.svg'></image>
+            已完成
+        </view>
+  </view>
+  <view class='orders'>
+      收货订单
+       <image src='../../img/getMore.png' class='moreOrders'></image>
+  </view>
+
+  <view class='orders'>
+      我的服务
+  </view>
+    <view class='orderStatus'>
+        <view class='needPay'>
+        <image  class='orderImg' src='https://misc.reflower.com.cn/images/renew.svg'></image>
+        续订管理
+        </view>
+        <view class='service'>
+          <image class='orderImg' src='https://misc.reflower.com.cn/images/card.svg'></image>
+          优惠卷
+        </view>
+        <view class='done'>
+            <image class='orderImg' src='https://misc.reflower.com.cn/images/caotact.svg'></image>
+            联系客服
+        </view>
+  </view>
