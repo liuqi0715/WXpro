@@ -1,0 +1,157 @@
+/* pages/My/ImHR/ImHR.wxss */
+
+page {
+  background: #e7ecef;
+}
+
+.top {
+  background: #fff;
+  padding: 10px;
+}
+
+.avatar {
+  width: 50px;
+}
+
+.avatar image {
+  width: 100%;
+}
+
+.log_info {
+  flex: 1;
+  margin-left: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  font-size: 30rpx;
+}
+
+.salary {
+  color: red;
+}
+
+.zhiwei {
+  font-size: 32rpx;
+  color: #333;
+}
+
+.gs {
+  color: #333;
+}
+
+.yaoqiu {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.tags {
+  margin-top: 10px;
+  font-size: 28rpx;
+}
+
+.tags text {
+  color: #777;
+  border: 1px solid #eee;
+  margin-right: 5px;
+  padding: 0 5px;
+}
+
+.interview-time {
+  font-size: 30rpx;
+  margin-top: 10px;
+}
+
+.date {
+  text-align: center;
+  margin: 10px 0;
+}
+
+.im {
+  padding: 10px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.im-right {
+  flex-direction: row-reverse;
+}
+
+.im-avatar {
+  width: 50px;
+  height: 50px;
+}
+
+.im-avatar image {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.im-right .im-avatar image {
+  border: 2px double #4dc380;
+}
+
+.content {
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  margin-right: 55px;
+  padding: 10px;
+  font-size: 30rpx;
+  position: relative;
+}
+
+.im-right .content {
+  margin-left: 55px;
+  margin-right: 20px;
+  background-color: #60c7f7;
+  color: #fff;
+}
+
+.im-right .content::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid #60c7f7;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  right: -10px;
+  top: 25px;
+}
+.im-left .content::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid #fff;
+  border-bottom: 5px solid transparent;
+  position: absolute;
+  left: -10px;
+  top: 25px;
+}
+.bottom{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  width: calc(100vw - 20px);
+  height: 50px;
+  border: 1px solid #eee;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+.bottom view{
+  width: 2em;
+}
+.bottom text{
+  width: 1em;
+  color: #999;
+}
+.bottom input{
+  flex: 1;
+}

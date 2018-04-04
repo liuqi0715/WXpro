@@ -1,0 +1,66 @@
+<!--pages/My/ImHR/ImHR.wxml-->
+<view>
+  <!-- 顶部 -->
+  <view class='top'>
+    <!-- logo -->
+    <view class='logo flex_aic'>
+      <view class='avatar'>
+        <image mode='widthFix' src='https://www.kannz.com/wp-content/uploads/hsbc-bank-nz.jpg'></image>
+      </view>
+      <view class='log_info'>
+        <view>
+          <view class='zhiwei'>客户经理</view>
+          <view class='gs'>汇丰银行</view>
+          <view class='yaoqiu'>朝阳 | 大专 | 经验不限</view>
+        </view>
+        <view class='salary'>￥8000-12000</view>
+      </view>
+    </view>
+    <!-- tags -->
+    <view class='tags flex_aic'>
+      <text>上市公司</text>
+      <text>晋升超快</text>
+      <text>快速提升自己</text>
+      <text>带薪休假</text>
+    </view>
+    <view class='interview-time'>
+      <text>面试时间: </text>
+      <text class='text_color'>2月27日(周二)10:00-16:00</text>
+    </view>
+  </view>
+
+  <!-- 对话内容框 -->
+  <view>
+    <view class='date'>10:00</view>
+    <view>
+
+      <!-- 右边 -->
+      <view class='im-right im'>
+        <view class='im-avatar'>
+          <image mode='widthFix' src='http://www.vstou.com/upload/image/519/201612/1482326836337037.jpg'></image>
+        </view>
+        <view class='content'>
+          <text>你好，我对贵公司该职位很感兴趣，希望能与你进一步沟通</text>
+        </view>
+      </view>
+
+      <!-- 左边 -->
+      <view class='im im-left'>
+        <view class='im-avatar'>
+          <image mode='widthFix' src='http://tvax3.sinaimg.cn/crop.37.4.229.229.180/005Y1KcCly8fkc4lnp10kj30bu06iwel.jpg'></image>
+        </view>
+        <view class='content'>
+          <text>你好，请将您的简历及个人获奖作品发送至bjyixin@163.com</text>
+        </view>
+      </view>
+  
+    </view>
+  </view>
+
+  <!-- 底部发送框 -->
+  <view class='bottom'>
+    <input bindblur='bindblur' bindconfirm="send" value='{{value}}'></input>
+    <text>|</text>
+    <view bindtap='send' class='text_color'>发送</view>
+  </view>
+</view>
