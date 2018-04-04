@@ -1,0 +1,305 @@
+<!--pages/My/DeliveryRecords/DeliveryRecords.wxml-->
+<view class="bgfff">
+  <view class="swiper-tab">
+    <view class="swiper-tab-list {{currentTab==index ? 'active' : ''}}" data-current="{{index}}" bindtap="swichNav" wx:for="{{category}}" wx:key="key" wx:index="index">{{item}}</view>
+  </view>
+  <swiper class="swiper-box" current="{{currentTab}}" bindchange="tabChange" style="height:{{swiperHeight}}px">
+    <!-- 全部 -->
+    <swiper-item>
+      <view class='height'>
+        <!-- 循环 -->
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>未查看</text>
+                <text class='bg_color' wx:if="{{}}">已查看</text>
+                <text class='bg_color' wx:if="{{}}">已邀请</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class="hrll" url="../imHR/imHR"> 和HR聊聊</navigator>
+              <text class='hrll bg_color' wx:if="{{}}">面试邀请</text>
+            </view>
+          </view>
+        </view>
+        <!-- 循环 end -->
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color' wx:if="{{}}">未查看</text>
+                <text class='bg_color'>已查看</text>
+                <text class='bg_color' wx:if="{{}}">已邀请</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class="hrll" url="../ImHR/ImHR"> 和HR聊聊</navigator>
+              <text class='hrll bg_color' wx:if="{{}}">面试邀请</text>
+            </view>
+          </view>
+        </view>
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color' wx:if="{{}}">未查看</text>
+                <text class='bg_color' wx:if="{{}}">已查看</text>
+                <text class='bg_color'>已邀请</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class="hrll" url="../imHR/imHR" wx:if="{{}}"> 和HR聊聊</navigator>
+              <text class='hrll bg_color'>面试邀请</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 未查看 -->
+    <swiper-item>
+      <view class='height'>
+        <!-- 循环 -->
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>未查看</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class="hrll" url="../imHR/imHR"> 和HR聊聊</navigator>
+
+            </view>
+          </view>
+        </view>
+        <!-- 循环 end -->
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>未查看</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class="hrll" url="../imHR/imHR"> 和HR聊聊</navigator>
+
+            </view>
+          </view>
+        </view>
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>未查看</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class="hrll" url="../imHR/imHR"> 和HR聊聊</navigator>
+
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 已查看 -->
+    <swiper-item>
+      <view class='height'>
+        <!-- 循环 -->
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>已查看</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class="hrll" url="../imHR/imHR"> 和HR聊聊</navigator>
+
+            </view>
+          </view>
+        </view>
+        <!-- 循环 end -->
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>已查看</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class="hrll" url="../imHR/imHR"> 和HR聊聊</navigator>
+
+            </view>
+          </view>
+        </view>
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>已查看</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <navigator class='hrll' url="../imHR/imHR">和HR聊聊</navigator>
+            </view>
+          </view>
+        </view>
+      </view>
+    </swiper-item>
+    <!-- 已邀请 -->
+    <swiper-item>
+      <view class='height'>
+        <!-- 循环 -->
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>已邀请</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <text class='hrll bg_color'>面试邀请</text>
+            </view>
+          </view>
+        </view>
+        <!-- 循环 end -->
+        <view class="distributor mb10">
+          <view class='flex_aic'>
+            <view class='avatar'>
+              <image src='https://tva1.sinaimg.cn/crop.0.0.180.180.50/6853040fjw1e8qgp5bmzyj2050050aa8.jpg' mode='widthFix'></image>
+            </view>
+            <view class='main'>
+              <view class='main-left'>
+                <view class='tit'>品牌推广</view>
+                <view class='name'>睿特云网</view>
+                <view class='salary'>￥8000-12000</view>
+              </view>
+              <view class='state'>
+                <text class='bg_color'>已邀请</text>
+              </view>
+            </view>
+          </view>
+          <view class='date flex_acjb mt10'>
+            <view>面试时间: 2月27日(周二)10:00-16:00</view>
+            <view>
+              <text class='hrll bg_color'>面试邀请</text>
+            </view>
+          </view>
+        </view>
+
+      </view>
+    </swiper-item>
+
+  </swiper>
+</view>
